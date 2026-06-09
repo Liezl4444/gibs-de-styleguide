@@ -297,6 +297,7 @@ main { max-width: 1080px; padding: 0 64px 120px; }
 #p-access     { --panel-accent: #9E191D; }
 #p-ai         { --panel-accent: #C9632F; }
 #p-toolkit    { --panel-accent: #7B293D; }
+#p-templates  { --panel-accent: #001B4A; }
 
 .eyebrow {
   font-family: var(--mono);

@@ -50,7 +50,8 @@
     <button class="sidenav-item" role="tab" id="t-bb"       aria-controls="p-bb"       aria-selected="false" style="--c:#9BB33B;--c-text:#4A5E17"><span class="nav-num">06</span><span class="nav-label">BB Conventions</span></button>
     <button class="sidenav-item" role="tab" id="t-access"   aria-controls="p-access"   aria-selected="false" style="--c:#9E191D"><span class="nav-num">07</span><span class="nav-label">Accessibility</span></button>
     <button class="sidenav-item" role="tab" id="t-ai"       aria-controls="p-ai"       aria-selected="false" style="--c:#C9632F"><span class="nav-num">08</span><span class="nav-label">AI Assistant</span></button>
-    <button class="sidenav-item" role="tab" id="t-toolkit"  aria-controls="p-toolkit"  aria-selected="false" style="--c:#7B293D"><span class="nav-num">09</span><span class="nav-label">Toolkit</span></button>
+    <button class="sidenav-item" role="tab" id="t-toolkit"   aria-controls="p-toolkit"   aria-selected="false" style="--c:#7B293D"><span class="nav-num">09</span><span class="nav-label">Toolkit</span></button>
+    <button class="sidenav-item" role="tab" id="t-templates" aria-controls="p-templates" aria-selected="false" style="--c:#001B4A"><span class="nav-num">10</span><span class="nav-label">Templates</span></button>
   </nav>
 
   <div class="page-content">
@@ -1157,6 +1158,403 @@
       </div>
 
       <div id="idea-out" aria-live="polite"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     10 · TEMPLATES
+     ============================================================ -->
+<section class="panel" id="p-templates" role="tabpanel" aria-labelledby="t-templates">
+  <div class="eyebrow">Instructional Design · Course Templates</div>
+  <h2>Templated assets and reusable components.</h2>
+  <p class="intro">A shared set of templated assets keeps GIBS courses consistent, accessible and familiar to learners. Use the approved templates wherever possible — new patterns should only be created when a clear learning need cannot be met by an existing component.</p>
+
+  <!-- Core principle -->
+  <div class="section">
+    <h3><span class="dot" style="background:var(--blue)"></span>Core principle: every component must earn its place</h3>
+    <p class="sub">Use a component when it improves clarity, orientation, action, engagement or accessibility. Before adding one, run through this checklist.</p>
+    <ul class="check-list">
+      <li><span class="box">✓</span><div>Does this help the learner understand what to do?</div></li>
+      <li><span class="box">✓</span><div>Does this reduce cognitive load?</div></li>
+      <li><span class="box">✓</span><div>Does this make the content easier to scan, navigate or apply?</div></li>
+      <li><span class="box">✓</span><div>Is the component accessible to keyboard and screen-reader users?</div></li>
+      <li><span class="box">✓</span><div><b>If not — would a heading, paragraph, list or table be clearer?</b> If yes, use plain content instead.</div></li>
+    </ul>
+  </div>
+
+  <hr class="rule">
+
+  <!-- Standard assets -->
+  <div class="section">
+    <h3><span class="dot" style="background:var(--teal)"></span>Standard templated assets</h3>
+    <p class="sub">These assets should be used consistently across all GIBS online courses. See the component templates section below for copy structure.</p>
+    <div style="overflow-x:auto">
+      <table class="gibs">
+        <caption>Standard templated assets — purpose and usage trigger.</caption>
+        <thead><tr><th scope="col">Asset</th><th scope="col">Purpose</th><th scope="col">Use when</th></tr></thead>
+        <tbody>
+          <tr><td><b>Live Session box</b></td><td>Orient learners before a synchronous session</td><td>Learners need date, time, topic, preparation and joining instructions</td></tr>
+          <tr><td><b>Course welcome block</b></td><td>Introduce learners to the course</td><td>A course or module needs a warm, structured introduction</td></tr>
+          <tr><td><b>Course overview box</b></td><td>Summarise course structure</td><td>Learners need to understand topics, assessments, workload and navigation</td></tr>
+          <tr><td><b>Assessment brief box</b></td><td>Present assessment requirements clearly</td><td>Learners need task instructions, weighting, deliverables and submission details</td></tr>
+          <tr><td><b>Activity instruction box</b></td><td>Explain what learners must do</td><td>Learners need clear task steps, outputs and completion instructions</td></tr>
+          <tr><td><b>Reflection prompt</b></td><td>Support personal meaning-making</td><td>Learners need to connect theory to their own context</td></tr>
+          <tr><td><b>Discussion prompt</b></td><td>Guide online participation</td><td>Learners need to post, respond or engage with peers</td></tr>
+          <tr><td><b>Knowledge check intro</b></td><td>Introduce a formative quiz or self-check</td><td>Learners need to understand the activity is low-stakes and for practice</td></tr>
+          <tr><td><b>Accordion</b></td><td>Organise optional or secondary information</td><td>Learners may only need to open selected sections</td></tr>
+          <tr><td><b>Flip cards</b></td><td>Reveal definitions, examples or concept checks</td><td>Learners benefit from active recall</td></tr>
+          <tr><td><b>Glossary</b></td><td>Define key terms consistently</td><td>A course includes technical or programme-specific terminology</td></tr>
+          <tr><td><b>Tabs</b></td><td>Compare parallel categories or views</td><td>Learners need to move between equivalent sections</td></tr>
+          <tr><td><b>Video embed block</b></td><td>Present video with learning context</td><td>Learners need a title, duration, purpose, transcript and captions</td></tr>
+          <tr><td><b>Resource card</b></td><td>Introduce a downloadable or linked resource</td><td>Learners need to know what a resource is and why it matters</td></tr>
+          <tr><td><b>AI assistant guidance block</b></td><td>Explain how learners should use an AI tool</td><td>Learners need boundaries, ethical guidance and usage instructions</td></tr>
+          <tr><td><b>Key takeaways box</b></td><td>Summarise essential learning points</td><td>A lesson or topic needs a concise recap</td></tr>
+          <tr><td><b>Next steps box</b></td><td>Guide learners to the next action</td><td>Learners need clear progression to the next lesson or assessment</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <hr class="rule">
+
+  <!-- Choosing the right component -->
+  <div class="section">
+    <h3><span class="dot" style="background:var(--green)"></span>Choosing the right component</h3>
+    <p class="sub">Choose the component that best matches the learning purpose. Do not choose one because it looks visually appealing.</p>
+    <div style="overflow-x:auto">
+      <table class="gibs">
+        <caption>Recommended component by learning need.</caption>
+        <thead><tr><th scope="col">Learning need</th><th scope="col">Recommended component</th><th scope="col">Avoid</th></tr></thead>
+        <tbody>
+          <tr><td>Present a short list of key ideas</td><td>Bulleted list or Key takeaways box</td><td>Flip cards or accordions</td></tr>
+          <tr><td>Explain a process</td><td>Numbered list</td><td>Accordion</td></tr>
+          <tr><td>Define key terms</td><td>Glossary or flip cards</td><td>Long paragraphs</td></tr>
+          <tr><td>Compare concepts</td><td>Table or tabs</td><td>Flip cards</td></tr>
+          <tr><td>Prepare learners for a live session</td><td>Live Session box</td><td>Paragraph hidden in the page</td></tr>
+          <tr><td>Give assessment instructions</td><td>Assessment brief box</td><td>Accordion or flip cards</td></tr>
+          <tr><td>Prompt reflection</td><td>Reflection prompt</td><td>Generic callout</td></tr>
+          <tr><td>Guide discussion</td><td>Discussion prompt</td><td>Unstructured paragraph</td></tr>
+          <tr><td>Provide optional detail</td><td>Accordion</td><td>Main body text for non-essential content</td></tr>
+          <tr><td>Summarise a lesson</td><td>Key takeaways box</td><td>Long concluding paragraph</td></tr>
+          <tr><td>Introduce a video</td><td>Video embed block</td><td>Video only, with no context</td></tr>
+          <tr><td>Link to a resource</td><td>Resource card</td><td>Raw file link with no explanation</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <hr class="rule">
+
+  <!-- When NOT to use -->
+  <div class="section">
+    <h3><span class="dot" style="background:var(--red)"></span>When not to use a component</h3>
+    <p class="sub">Do not use a component when plain content would be clearer. Avoid interactive components in these situations.</p>
+    <div class="grid cols-2">
+      <ul class="check-list">
+        <li><span class="box" style="border-color:var(--red);color:var(--red)">✕</span><div>The content is essential and must be seen by all learners</div></li>
+        <li><span class="box" style="border-color:var(--red);color:var(--red)">✕</span><div>The learner must follow a sequence of steps</div></li>
+        <li><span class="box" style="border-color:var(--red);color:var(--red)">✕</span><div>The interaction hides assessment instructions</div></li>
+        <li><span class="box" style="border-color:var(--red);color:var(--red)">✕</span><div>The content is too long to scan easily</div></li>
+      </ul>
+      <ul class="check-list">
+        <li><span class="box" style="border-color:var(--red);color:var(--red)">✕</span><div>The component is used only for visual variety</div></li>
+        <li><span class="box" style="border-color:var(--red);color:var(--red)">✕</span><div>A heading, list, table or paragraph would be clearer</div></li>
+        <li><span class="box" style="border-color:var(--red);color:var(--red)">✕</span><div>The component creates unnecessary clicks</div></li>
+        <li><span class="box" style="border-color:var(--red);color:var(--red)">✕</span><div>The component has not been tested for accessibility</div></li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="rule">
+
+  <!-- Component templates -->
+  <div class="section">
+    <h3><span class="dot" style="background:var(--purple)"></span>Component templates</h3>
+    <p class="sub">Expand each component for usage guidance and a copy template. Replace all <b>[bracketed]</b> text with real content.</p>
+
+    <h4 class="subhead-min">Course structure blocks</h4>
+
+    <details class="acc">
+      <summary>Live Session box<span class="chev">+</span></summary>
+      <div class="acc-body">
+        <p><b>Use when:</b> Learners need to prepare for or attend a synchronous session. Include: session title, date and time, facilitator name (if available), purpose, preparation required, joining instructions, and what to do after the session.</p>
+        <pre class="spec" style="margin-top:14px">Live Session: [Session title]
+
+In this session, you will [briefly describe the purpose].
+
+Before the session:
+1. Complete [preparation task].
+2. Review [resource or topic].
+3. Prepare [question, reflection or activity].
+
+After the session, the recording and supporting materials will
+be added to the course where applicable.</pre>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary>Assessment brief box<span class="chev">+</span></summary>
+      <div class="acc-body">
+        <p><b>Use when:</b> Presenting formal assessment information. Include: title, weighting, aligned outcomes, task overview, deliverables, format, due date, submission location, and AI / academic integrity guidance where relevant.</p>
+        <pre class="spec" style="margin-top:14px">Assessment [N]: [Assessment title]
+
+Weighting: [percentage]
+Aligned outcomes: [CO1, CO2, TO1, etc.]
+Submit: [file type or submission format]
+Due date: [date and time]
+Submission location: [Blackboard link or location]
+
+In this assessment, you will [briefly describe the task].
+
+To complete this assessment:
+1. [Step 1]
+2. [Step 2]
+3. [Step 3]
+
+Before you submit, check that you have included all required deliverables.</pre>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary>Activity instruction box<span class="chev">+</span></summary>
+      <div class="acc-body">
+        <p><b>Use when:</b> Learners need to complete a task. Be action-oriented and make the expected output clear. Include: title, estimated time, purpose, numbered instructions, expected output, and completion requirement.</p>
+        <pre class="spec" style="margin-top:14px">Activity: [Activity title]
+
+Estimated time: [time]
+
+In this activity, you will [briefly describe the learning purpose].
+
+To complete this activity:
+1. [Action step]
+2. [Action step]
+3. [Action step]
+
+When you are done, [explain what the learner should submit,
+post, save or do next].</pre>
+      </div>
+    </details>
+
+    <h4 class="subhead-min" style="margin-top:30px">Learning prompts</h4>
+
+    <details class="acc">
+      <summary>Reflection prompt<span class="chev">+</span></summary>
+      <div class="acc-body">
+        <p><b>Use when:</b> Learners need to connect concepts to their own experience or workplace. Keep prompts specific and manageable — avoid asking too many questions at once. If a formal response is required, use a numbered list and make the expectation clear.</p>
+        <pre class="spec" style="margin-top:14px">Reflection: [Prompt title]
+
+Take a few minutes to reflect on the following question:
+
+[Reflection question]
+
+You may want to consider:
+• [Supporting prompt]
+• [Supporting prompt]
+• [Supporting prompt]</pre>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary>Discussion prompt<span class="chev">+</span></summary>
+      <div class="acc-body">
+        <p><b>Use when:</b> Learners need to engage with peers. Include: topic, question or task, expected format, reply requirement, deadline where relevant.</p>
+        <pre class="spec" style="margin-top:14px">Discussion: [Discussion title]
+
+Post your response to the following prompt:
+
+[Discussion question]
+
+In your post, include:
+1. [Requirement]
+2. [Requirement]
+3. [Requirement]
+
+Then reply to at least one peer. Your reply should build on their
+contribution by asking a question, offering an example or making
+a connection to the course content.</pre>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary>Knowledge check intro<span class="chev">+</span></summary>
+      <div class="acc-body">
+        <p><b>Use when:</b> Introducing a formative quiz or self-check. Make clear it is low-stakes and for practice — not an assessed submission.</p>
+        <pre class="spec" style="margin-top:14px">Knowledge check: [Topic]
+
+This knowledge check will help you test your understanding of
+[concept or topic].
+
+It is designed for practice and feedback. Use it to identify what
+you understand well and what you may need to review before
+moving on.</pre>
+      </div>
+    </details>
+
+    <h4 class="subhead-min" style="margin-top:30px">Media &amp; resources</h4>
+
+    <details class="acc">
+      <summary>Video embed block<span class="chev">+</span></summary>
+      <div class="acc-body">
+        <p><b>Use when:</b> Presenting a video. Every video must have context, a guiding question, captions and a transcript.</p>
+        <pre class="spec" style="margin-top:14px">Video: [Video title]
+
+Duration: [time]
+
+In this video, [briefly explain what the learner will learn or
+consider].
+
+As you watch, think about:
+[Guiding question]
+
+A transcript and captions are available [below / in the course
+resources].</pre>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary>Resource card<span class="chev">+</span></summary>
+      <div class="acc-body">
+        <p><b>Use when:</b> Linking to a document, article, PDF, template, worksheet or external resource. Always explain what it is and why the learner should open it.</p>
+        <pre class="spec" style="margin-top:14px">Resource: [Resource title]
+
+Format: [PDF, article, worksheet, template, website]
+
+Use this resource to [explain the purpose]. You will need it for
+[activity, assessment, discussion or topic], where applicable.</pre>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary>AI assistant guidance block<span class="chev">+</span></summary>
+      <div class="acc-body">
+        <p><b>Use when:</b> A course includes an AI-supported learning activity. Explain what the assistant is for, how to use it and what the limits are.</p>
+        <pre class="spec" style="margin-top:14px">Using the AI assistant
+
+The AI assistant is designed to support your thinking and help you
+explore the course concepts. It should not replace your own
+analysis, judgement or final submission.
+
+Use the assistant to:
+• test your understanding
+• ask clarifying questions
+• explore different perspectives
+• practise applying course concepts
+
+Do not use the assistant to:
+• generate your final answer for submission
+• avoid engaging with the course materials
+• submit work that does not reflect your own thinking
+• share private, confidential or sensitive information
+
+Always check the assistant's responses against the course
+materials, assessment instructions and your own judgement.</pre>
+      </div>
+    </details>
+
+    <h4 class="subhead-min" style="margin-top:30px">Closers</h4>
+
+    <details class="acc">
+      <summary>Key takeaways box<span class="chev">+</span></summary>
+      <div class="acc-body">
+        <p><b>Use when:</b> Summarising essential points at the end of a lesson, topic or complex explanation. Keep the list short and focused.</p>
+        <pre class="spec" style="margin-top:14px">Key takeaways
+
+In this section, you learned that:
+• [Key point]
+• [Key point]
+• [Key point]</pre>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary>Next steps box<span class="chev">+</span></summary>
+      <div class="acc-body">
+        <p><b>Use when:</b> Guiding learners to their next action — especially useful at the end of a lesson, topic or activity.</p>
+        <pre class="spec" style="margin-top:14px">Next steps
+
+You are now ready to:
+1. [Next action]
+2. [Next action]
+3. [Next action]
+
+Then continue to [next topic, activity or assessment].</pre>
+      </div>
+    </details>
+
+    <h4 class="subhead-min" style="margin-top:30px">Content containers</h4>
+
+    <details class="acc">
+      <summary>Accordion usage rules<span class="chev">+</span></summary>
+      <div class="acc-body">
+        <p><b>Use for:</b> optional or expandable information — FAQs, additional explanations, supporting examples. <b>Do not use</b> for content all learners must read: assessment instructions, required steps, due dates, core learning content.</p>
+        <p style="margin-top:10px"><b>Headings:</b> sentence case, clear and descriptive.</p>
+        <div class="dd" style="margin-top:14px">
+          <div class="dd-card do"><div class="dd-tag"><span class="ic">✓</span>Do</div><p class="ex">What to prepare before the live session</p><p class="ex">Additional reading</p><p class="ex">Frequently asked questions</p><p class="ex">Examples of financial ratios</p></div>
+          <div class="dd-card no"><div class="dd-tag"><span class="ic">✕</span>Don't</div><p class="ex muted">More information</p><p class="ex muted">Click here</p><p class="ex muted">Important</p><p class="ex muted">Section 1</p></div>
+        </div>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary>Flip card usage rules<span class="chev">+</span></summary>
+      <div class="acc-body">
+        <p><b>Use for:</b> key terms and definitions, short examples, concept checks, myth vs fact, question and answer pairs. Each card should contain one idea only — keep the front short and the back concise.</p>
+        <p style="margin-top:10px"><b>Do not use for:</b> long explanations, essential instructions, assessment requirements, sequential processes, or content learners need to copy or reference easily.</p>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary>Glossary usage rules<span class="chev">+</span></summary>
+      <div class="acc-body">
+        <p><b>Use when:</b> A course includes technical, disciplinary or programme-specific terminology. Each entry: term, plain-language definition, example where useful, context of use. Sentence case for definitions.</p>
+        <pre class="spec" style="margin-top:14px">Liquidity
+
+Liquidity refers to how easily an organisation can access cash or
+convert assets into cash to meet its short-term obligations.</pre>
+      </div>
+    </details>
+  </div>
+
+  <hr class="rule">
+
+  <!-- Accessibility requirements -->
+  <div class="section">
+    <h3><span class="dot" style="background:var(--orange)"></span>Accessibility requirements</h3>
+    <p class="sub">All templated assets must support accessibility and learner navigation. Check every item before publishing.</p>
+    <ul class="check-list">
+      <li><span class="box">✓</span><div><b>Headings</b> are descriptive and follow the correct hierarchy — Title → Header → Subheader.</div></li>
+      <li><span class="box">✓</span><div><b>Links</b> describe their destination or purpose — not "click here" or "read more".</div></li>
+      <li><span class="box">✓</span><div><b>Buttons and interactive elements</b> can be used with a keyboard and show a visible focus indicator.</div></li>
+      <li><span class="box">✓</span><div><b>Colour</b> is not the only way meaning is communicated — labels or patterns are also present.</div></li>
+      <li><span class="box">✓</span><div><b>Text contrast</b> meets WCAG 2.1 AA — 4.5:1 for normal text, 3:1 for large text.</div></li>
+      <li><span class="box">✓</span><div><b>Images</b> include appropriate alt text. Decorative images use <code>alt=""</code>.</div></li>
+      <li><span class="box">✓</span><div><b>Videos</b> include captions and a transcript wherever possible.</div></li>
+      <li><span class="box">✓</span><div><b>Tables</b> are used for data, not layout, with properly marked-up header cells.</div></li>
+      <li><span class="box">✓</span><div><b>Accordions and interactive components</b> have clear, descriptive labels and degrade gracefully if the interaction fails.</div></li>
+      <li><span class="box">✓</span><div><b>Lists</b> use proper list markup — not typed dashes or symbols on separate lines.</div></li>
+    </ul>
+  </div>
+
+  <hr class="rule">
+
+  <!-- Governance + Golden rule -->
+  <div class="section">
+    <h3><span class="dot" style="background:var(--maroon)"></span>Component governance</h3>
+    <p class="sub">The component library is a shared GIBS Digital Education resource. Use approved components wherever possible.</p>
+    <div class="grid cols-2">
+      <div class="card">
+        <h4 style="font-size:16px;margin-bottom:10px">Adding a new component</h4>
+        <p style="font-size:14.5px;color:var(--ink-soft);margin:0">A new component should only be added if it solves a recurring learning design need, supports accessibility, works across devices, can be reused across courses, has clear usage guidance and aligns with GIBS Digital Education visual and editorial conventions.</p>
+      </div>
+      <div class="card">
+        <h4 style="font-size:16px;margin-bottom:10px">Deprecated components</h4>
+        <p style="font-size:14.5px;color:var(--ink-soft);margin:0">Deprecated components should not be used in new courses unless there is a clear reason and approval has been given. If you encounter a deprecated pattern in an existing course, flag it for review at the next course refresh.</p>
+      </div>
+    </div>
+    <div class="callout key" style="margin-top:22px">
+      <div class="glyph">★</div>
+      <div class="body"><div class="ttl">The golden rule</div><p>Use the simplest effective format. If a heading, paragraph, list or table communicates the content clearly, use that. If a component genuinely improves learner orientation, action, understanding or accessibility — use the approved template.</p></div>
     </div>
   </div>
 </section>
