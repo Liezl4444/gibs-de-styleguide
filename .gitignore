@@ -1,0 +1,14 @@
+# Secrets — never commit
+.env
+.env.*
+
+# Netlify local
+.netlify/
+
+# Dependencies
+node_modules/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/

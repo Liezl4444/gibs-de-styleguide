@@ -1,0 +1,8 @@
+# Netlify configuration for the GIBS Style Guide
+# The site is a static index.html at the repo root, plus one serverless function.
+
+[build]
+  publish = "."
+
+[functions]
+  directory = "netlify/functions"

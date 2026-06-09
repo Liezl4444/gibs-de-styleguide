@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GIBS Brand & Content Style Guide — Instructional Design</title>
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<template id="__bundler_thumbnail">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <rect width="400" height="400" fill="#002C77"/>
+  <rect x="120" y="120" width="160" height="160" rx="18" fill="#9BB33B"/>
+  <text x="200" y="232" font-family="Georgia, serif" font-size="92" font-weight="700" fill="#002C77" text-anchor="middle">G</text>
+</svg>
+</template>
+
+<!-- ============ MASTHEAD ============ -->
+<header class="masthead">
+  <div class="masthead-inner">
+    <div class="brand-row">
+      <div class="wordmark">GIBS<span class="div">Gordon Institute of Business Science</span></div>
+      <div class="brand-tag">Globally accredited, <b>proudly African.</b></div>
+    </div>
+    <h1>Brand &amp; Content Style Guide</h1>
+    <p class="lede">A working reference for the Instructional Design team — so every asset we build, from a callout box to an HTML interactive, sounds like GIBS, looks like GIBS, and works for every learner.</p>
+  </div>
+</header>
+
+<!-- ============ TAB BAR ============ -->
+<div class="tabbar-wrap">
+  <nav class="tabbar" role="tablist" aria-label="Style guide sections">
+    <button class="tab" role="tab" id="t-overview" aria-controls="p-overview" aria-selected="true"><span class="num">01</span>Overview</button>
+    <button class="tab" role="tab" id="t-voice" aria-controls="p-voice" aria-selected="false"><span class="num">02</span>Voice &amp; Tone</button>
+    <button class="tab" role="tab" id="t-writing" aria-controls="p-writing" aria-selected="false"><span class="num">03</span>Writing</button>
+    <button class="tab" role="tab" id="t-brand" aria-controls="p-brand" aria-selected="false"><span class="num">04</span>Colour &amp; Type</button>
+    <button class="tab" role="tab" id="t-components" aria-controls="p-components" aria-selected="false"><span class="num">05</span>Components</button>
+    <button class="tab" role="tab" id="t-access" aria-controls="p-access" aria-selected="false"><span class="num">06</span>Accessibility</button>
+    <button class="tab" role="tab" id="t-ai" aria-controls="p-ai" aria-selected="false"><span class="num">07</span>AI Assistant</button>
+    <button class="tab" role="tab" id="t-toolkit" aria-controls="p-toolkit" aria-selected="false"><span class="num">08</span>Toolkit</button>
+  </nav>
+</div>
+
+<main>
+
+<!-- ============================================================
+     01 · OVERVIEW
+     ============================================================ -->
+<section class="panel active" id="p-overview" role="tabpanel" aria-labelledby="t-overview">
+  <div class="eyebrow">For the Instructional Design team</div>
+  <h2>How we build, written down.</h2>
+  <p class="intro">This guide keeps our course assets consistent and accessible. When you're not sure how to write a callout, size an image, structure a module, or phrase a learning outcome — start here. It's a living document; if a rule is missing or wrong, flag it.</p>
+
+  <div class="section">
+    <h3><span class="dot" style="background:var(--blue)"></span>The four commitments</h3>
+    <p class="sub">Every asset we generate should be able to answer "yes" to all four. They're the reason this guide exists.</p>
+    <div class="grid cols-4">
+      <div class="card commit" style="border-top-color:var(--blue)">
+        <span class="k">01 — Consistency</span>
+        <h4>On brand</h4>
+        <p>One visual and verbal language across every course, so learners always know they're at GIBS.</p>
+      </div>
+      <div class="card commit" style="border-top-color:var(--teal)">
+        <span class="k">02 — UDL</span>
+        <h4>Designed for all</h4>
+        <p>Universal Design for Learning: multiple ways to access, engage with, and act on content.</p>
+      </div>
+      <div class="card commit" style="border-top-color:var(--green)">
+        <span class="k">03 — WCAG</span>
+        <h4>Accessible by default</h4>
+        <p>Meets WCAG 2.1 AA — contrast, alt text, keyboard, captions. Not an extra step; the baseline.</p>
+      </div>
+      <div class="card commit" style="border-top-color:var(--orange)">
+        <span class="k">04 — Structure</span>
+        <h4>Cohesive courses</h4>
+        <p>A predictable module rhythm so learners can navigate any course without relearning the layout.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h3><span class="dot" style="background:var(--lime)"></span>The golden rules</h3>
+    <p class="sub">If you remember nothing else, remember these.</p>
+    <ul class="check-list">
+      <li><span class="box">✓</span><div><b>Write warm and human, one consistent voice.</b> Speak to one learner, plainly, as a knowledgeable colleague would.<span class="d">Same register everywhere — academic content and interactive prompts alike.</span></div></li>
+      <li><span class="box">✓</span><div><b>Make it easy to act on.</b> Short sentences, clear steps, obvious next actions. If a learner can't tell what to do, rewrite it.</div></li>
+      <li><span class="box">✓</span><div><b>Accessible or it doesn't ship.</b> Alt text, captions, 4.5:1 contrast, logical headings, keyboard-operable interactives.</div></li>
+      <li><span class="box">✓</span><div><b>Use the system, don't reinvent it.</b> Brand colours, the type scale, the component patterns in this guide. Consistent beats clever.</div></li>
+      <li><span class="box">✓</span><div><b>UK / South African English.</b> organi<b>s</b>e, programme, colour, centre, -ise endings.</div></li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h3><span class="dot" style="background:var(--red)"></span>Quick "do not" list</h3>
+    <p class="sub">The tells we never want to see in a GIBS course. Each gets full treatment in the relevant tab.</p>
+    <div class="tags">
+      <span class="pill">✕ walls of text</span>
+      <span class="pill">✕ jargon &amp; academic waffle</span>
+      <span class="pill">✕ passive voice</span>
+      <span class="pill">✕ "delve / unlock / elevate / leverage"</span>
+      <span class="pill">✕ "in today's fast-paced world"</span>
+      <span class="pill">✕ em-dash overload</span>
+      <span class="pill">✕ vague instructions</span>
+      <span class="pill">✕ poor contrast / missing alt text</span>
+      <span class="pill">✕ emoji &amp; exclamation overload</span>
+      <span class="pill">✕ Title Case on in-page headings &amp; body</span>
+      <span class="pill">✕ inconsistent image sizes</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     02 · VOICE & TONE
+     ============================================================ -->
+<section class="panel" id="p-voice" role="tabpanel" aria-labelledby="t-voice">
+  <div class="eyebrow">How GIBS sounds</div>
+  <h2>Warm, human, and one voice throughout.</h2>
+  <p class="intro">Our learners are capable, busy professionals. We write to them as a sharp, generous colleague would — confident in the substance, warm in the delivery. The same voice carries from a module introduction to a flip-card prompt.</p>
+
+  <div class="section">
+    <h3><span class="dot" style="background:var(--teal)"></span>The mission underneath the words</h3>
+    <p class="sub">Every asset, however small, is in service of this.</p>
+    <div class="card">
+      <div class="pquote">
+        <p class="q">We significantly improve responsible individual and organisational performance — proudly African, globally relevant.</p>
+        <div class="cite">GIBS purpose<span>The thread that should run beneath every course we design.</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h3><span class="dot" style="background:var(--blue)"></span>Voice traits</h3>
+    <p class="sub">Five qualities. Hold them in tension — warm <em>and</em> credible, plain <em>and</em> rigorous.</p>
+    <div class="grid cols-3">
+      <div class="card"><h4 style="font-size:18px">Warm &amp; human</h4><p style="font-size:15px;color:var(--ink-soft);margin:0">Speak to one person. Use "you". Sound like a real colleague, never a policy document.</p></div>
+      <div class="card"><h4 style="font-size:18px">Clear &amp; direct</h4><p style="font-size:15px;color:var(--ink-soft);margin:0">Lead with the point. Short sentences. Plain words over impressive ones.</p></div>
+      <div class="card"><h4 style="font-size:18px">Credible</h4><p style="font-size:15px;color:var(--ink-soft);margin:0">Rigorous and accurate. Warmth never means dumbing the substance down.</p></div>
+      <div class="card"><h4 style="font-size:18px">Encouraging</h4><p style="font-size:15px;color:var(--ink-soft);margin:0">Assume capability. Guide, don't lecture. Make the next step feel achievable.</p></div>
+      <div class="card"><h4 style="font-size:18px">Proudly African</h4><p style="font-size:15px;color:var(--ink-soft);margin:0">Local context and examples, globally relevant insight. Our point of view.</p></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h3><span class="dot" style="background:var(--green)"></span>Voice in practice</h3>
+    <p class="sub">Same meaning, right register.</p>
+    <div class="dd">
+      <div class="dd-card no">
+        <div class="dd-tag"><span class="ic">✕</span>Off voice</div>
+        <p class="ex muted">"It is imperative that participants leverage the aforementioned frameworks to optimise organisational synergies in today's fast-paced business landscape."</p>
+      </div>
+      <div class="dd-card do">
+        <div class="dd-tag"><span class="ic">✓</span>On voice</div>
+        <p class="ex">"Use these three frameworks to find where your team is duplicating effort — and where it's missing it."</p>
+      </div>
+    </div>
+    <div class="dd" style="margin-top:18px">
+      <div class="dd-card no">
+        <div class="dd-tag"><span class="ic">✕</span>Off voice</div>
+        <p class="ex muted">"Learners are required to complete the assessment." <br><em style="font-size:13px">Cold, passive, institutional.</em></p>
+      </div>
+      <div class="dd-card do">
+        <div class="dd-tag"><span class="ic">✓</span>On voice</div>
+        <p class="ex">"You'll finish this module with a short scenario to apply what you've learned. It takes about ten minutes."</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h3><span class="dot" style="background:var(--orange)"></span>Tone holds steady</h3>
+    <p class="sub">We chose one consistent tone — don't swing formal for theory and chatty for activities.</p>
+    <div class="callout reflect">
+      <div class="glyph">i</div>
+      <div class="body"><div class="ttl">One register, calibrated</div><p>Stay warm and plain throughout. The <em>energy</em> can lift slightly for prompts and encouragement, but the voice never changes character. No corporate stiffness in the lectures; no over-familiar slang in the activities.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     03 · WRITING
+     ============================================================ -->
+<section class="panel" id="p-writing" role="tabpanel" aria-labelledby="t-writing">
+  <div class="eyebrow">Plain language mechanics</div>
+  <h2>Writing learners can act on.</h2>
+  <p class="intro">Plain language is an accessibility feature, not a downgrade. These rules make content faster to read, easier to translate into action, and consistent across every course.</p>
+
+  <div class="section">
+    <h3><span class="dot" style="background:var(--blue)"></span>Core writing rules</h3>
+    <ul class="check-list">
+      <li><span class="box">✓</span><div><b>One idea per paragraph; 2–4 sentences.</b> Break up anything longer. White space is a feature.</div></li>
+      <li><span class="box">✓</span><div><b>Active voice.</b> "Review the case study" — not "the case study should be reviewed".</div></li>
+      <li><span class="box">✓</span><div><b>Front-load the point.</b> Say what matters in the first sentence, then explain.</div></li>
+      <li><span class="box">✓</span><div><b>Plain words.</b> "use" not "utilise", "help" not "facilitate", "about" not "with regard to".</div></li>
+      <li><span class="box">✓</span><div><b>Define terms once, then stay consistent.</b> Don't call it a "module" here and a "unit" there.</div></li>
+      <li><span class="box">✓</span><div><b>Capitalise by role, not by habit.</b> Title Case for course, module and page titles; sentence case for in-page headings and body. See the convention below.</div></li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h3><span class="dot" style="background:var(--teal)"></span>Capitalisation convention</h3>
+    <p class="sub">A consistent, defensible rule for Blackboard Ultra courses — grounded in WCAG heading clarity (2.4.6), UDL readability, and recognised style terminology.</p>
+
+    <div class="callout key" style="margin-bottom:20px">
+      <div class="glyph">★</div>
+      <div class="body"><div class="ttl">The rule</div><p>Use <b>Title Case</b> for formal course and page identifiers — course banners, learning modules, page titles and Blackboard's <b>Title</b> style. Use <b>sentence case</b> for the instructional hierarchy inside a page — <b>Header</b>, <b>Subheader</b> and <b>Paragraph</b>.</p></div>
+    </div>
+
+    <table class="gibs">
+      <caption>Capitalisation by course element (Blackboard Ultra).</caption>
+      <thead><tr><th scope="col">Course element</th><th scope="col">Blackboard style</th><th scope="col">Case</th><th scope="col">Example</th></tr></thead>
+      <tbody>
+        <tr><td>Course banner</td><td>Programme-level title</td><td><b>Title Case</b></td><td>Business Finance for Managers (PMD 71 Online 2026)</td></tr>
+        <tr><td>Learning module</td><td>Major container</td><td><b>Title Case</b></td><td>Course Introduction</td></tr>
+        <tr><td>Page title</td><td>Content item title</td><td><b>Title Case</b></td><td>Welcome to Business Finance for Managers</td></tr>
+        <tr><td>In-page title</td><td>Title (H1) style</td><td><b>Title Case</b></td><td>Understanding Financial Statements</td></tr>
+        <tr><td>Header</td><td>Header (H2) style</td><td>Sentence case</td><td>What you need to know before you begin</td></tr>
+        <tr><td>Subheader</td><td>Subheader (H3) style</td><td>Sentence case</td><td>Apply this concept to your workplace</td></tr>
+        <tr><td>Paragraph</td><td>Body text</td><td>Sentence case</td><td>Welcome to this learning activity.</td></tr>
+      </tbody>
+    </table>
+
+    <div class="callout warn" style="margin-top:20px">
+      <div class="glyph">!</div>
+      <div class="body"><div class="ttl">Use the levels in order — not by looks</div><p>Choose Title, Header or Subheader for what it <em>is</em> in the structure, never for how it looks: <b>Title → Header → Subheader → Paragraph</b>. Don't skip a level (for example, Title straight to Subheader). Screen-reader and keyboard users navigate by this structure.</p></div>
+    </div>
+
+    <p class="sub" style="margin-top:18px">Say “<b>Title Case</b>” and “<b>sentence case</b>” — avoid “Capital Case”, which gets misread as ALL CAPS. “GIBS” is always all caps; use <b>bold</b> for emphasis, never ALL CAPS.</p>
+  </div>
+
+  <div class="section">
+    <h3><span class="dot" style="background:var(--orange)"></span>Numbers &amp; currency</h3>
+    <p class="sub">Based on APA-style number usage, adapted for South African / British formatting. Numerals scan faster in instructions, rubrics and LMS navigation — so learning-design values lean numeric.</p>
+
+    <div class="callout key" style="margin-bottom:20px">
+      <div class="glyph">★</div>
+      <div class="body"><div class="ttl">The rule</div><p>Spell out <b>one to nine</b> in general prose; use numerals for <b>10 and above</b>. Always use numerals for measurements, marks, percentages, dates, times, ages, numbered steps, module/topic numbers and currency. For rand, put the symbol before the number and use a <b>space</b> as the thousands separator: <b>R100 000</b>, not R100,000.</p></div>
+    </div>
+
+    <table class="gibs">
+      <caption>Numbers &amp; currency by use case.</caption>
+      <thead><tr><th scope="col">Use case</th><th scope="col">Convention</th><th scope="col">Example</th></tr></thead>
+      <tbody>
+        <tr><td>General, one to nine</td><td>Words</td><td>Complete <b>three</b> activities.</td></tr>
+        <tr><td>General, 10 and above</td><td>Numerals</td><td>Complete <b>10</b> activities.</td></tr>
+        <tr><td>Marks, %, time, measurements</td><td>Numerals</td><td>5 marks · 8% · 3 hours · 7 days</td></tr>
+        <tr><td>Steps &amp; sequences</td><td>Numerals</td><td>Step 1 · Module 2 · Topic 3</td></tr>
+        <tr><td>Money (rand)</td><td>Symbol + space</td><td>R100 000</td></tr>
+        <tr><td>Millions</td><td>Numeral + “million”</td><td>R4 million</td></tr>
+        <tr><td>Adjectival money phrase</td><td>Hyphenate</td><td>a R4-million deal</td></tr>
+        <tr><td>Thousands separator</td><td>Space, not comma</td><td>25 000 learners</td></tr>
+        <tr><td>Decimals</td><td>Comma decimal</td><td>3,5 hours · R99,95</td></tr>
+        <tr><td>Start of a sentence</td><td>Spell out or rewrite</td><td>Twenty learners… / A total of 20 learners…</td></tr>
+      </tbody>
+    </table>
+
+    <div class="callout warn" style="margin-top:20px">
+      <div class="glyph">!</div>
+      <div class="body"><div class="ttl">Below 10? Still use numerals when it's a value</div><p>Use figures for any measurement, mark, percentage, date, time, age, step or sequence — even under 10: <b>3 attempts</b>, <b>5 marks</b>, <b>2 hours</b>, <b>5 pm</b>, <b>Topic 4</b>, <b>7 out of 10</b>.</p></div>
+    </div>
+
+    <div class="dd" style="margin-top:20px">
+      <div class="dd-card do"><div class="dd-tag"><span class="ic">✓</span>Do</div><p class="ex">This assessment is worth <b>30 marks</b>. You'll complete <b>three</b> reflection activities and <b>10</b> questions. The budget is <b>R100 000</b>; revenue was <b>R4 million</b>.</p></div>
+      <div class="dd-card no"><div class="dd-tag"><span class="ic">✕</span>Don't</div><p class="ex muted">This assessment is worth <b>thirty marks</b>. You'll complete <b>3</b> reflection activities. The budget is <b>R100,000</b>; revenue was <b>R4-million</b>.</p></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h3><span class="dot" style="background:var(--red)"></span>The AI-tells we cut</h3>
+    <p class="sub">Generated drafts lean on these. Find and replace them before anything ships.</p>
+    <div class="dd">
+      <div class="dd-card no">
+        <div class="dd-tag"><span class="ic">✕</span>Cut these</div>
+        <p class="ex muted">delve, unlock, elevate, leverage, harness, navigate the landscape, "in today's fast-paced world", "it's important to note that", "more than ever", "the world of…", "let's dive in", endless em-dashes, three-item lists of everything.</p>
+      </div>
+      <div class="dd-card do">
+        <div class="dd-tag"><span class="ic">✓</span>Write instead</div>
+        <p class="ex">Say the concrete thing. "Use" not "leverage". "Look at" not "delve into". Open with the actual point, not a throat-clearing preamble. Vary your sentence rhythm.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h3><span class="dot" style="background:var(--green)"></span>Walls of text, fixed</h3>
+    <div class="dd">
+      <div class="dd-card no">
+        <div class="dd-tag"><span class="ic">✕</span>Wall of text</div>
+        <p class="ex muted">"In order to effectively manage organisational change it is necessary to consider a multitude of factors including but not limited to stakeholder alignment, communication strategy, resource allocation, and the cultural readiness of the organisation, all of which must be carefully balanced…"</p>
+      </div>
+      <div class="dd-card do">
+        <div class="dd-tag"><span class="ic">✓</span>Scannable</div>
+        <p class="ex">Managing change well comes down to four things:</p>
+        <p class="ex" style="margin-top:6px">• Aligning stakeholders<br>• A clear communication plan<br>• The right resources<br>• A culture that's ready</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h3><span class="dot" style="background:var(--purple)"></span>House style quick reference</h3>
+    <div class="grid cols-2">
+      <div class="card">
+        <h4 style="font-size:17px;margin-bottom:10px">Spelling &amp; punctuation</h4>
+        <p style="font-size:14.5px;color:var(--ink-soft);margin:0">
+          UK / SA English: organi<b>s</b>e, programme, colour, behaviour, centre.<br>
+          One space after full stops. Serial comma only to avoid ambiguity.<br>
+          Numbers: spell out one–nine, numerals from 10. Use R for rand (R5 000).<br>
+          Dates: 8 June 2026. Don't overuse em-dashes — a comma or full stop usually works.
+        </p>
+      </div>
+      <div class="card">
+        <h4 style="font-size:17px;margin-bottom:10px">Capitalisation</h4>
+        <p style="font-size:14.5px;color:var(--ink-soft);margin:0">
+          Title Case for course, module and page titles (Blackboard's Title style).<br>
+          Sentence case for Header, Subheader, body, buttons and labels.<br>
+          Use the heading levels in structural order; don't skip a level.<br>
+          "GIBS" is always all caps. Emphasis is <b>bold</b>, never ALL CAPS.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     04 · COLOUR & TYPE
+     ============================================================ -->
+<section class="panel" id="p-brand" role="tabpanel" aria-labelledby="t-brand">
+  <div class="eyebrow">From the GIBS CI guide</div>
+  <h2>Colour &amp; type, applied.</h2>
+  <p class="intro">The palette and type system are fixed by the brand. Your job is to apply them consistently — and always with enough contrast to stay readable.</p>
+
+  <div class="section">
+    <h3><span class="dot" style="background:var(--blue)"></span>Primary palette</h3>
+    <p class="sub">GIBS Blue leads. Black and white do the heavy lifting for text and space.</p>
+    <div class="grid cols-3">
+      <div class="swatch"><div class="chip" style="background:#002C77"></div><div class="meta"><div class="name">GIBS Blue</div><div class="use">Primary — headings, structure, key UI</div><div class="hex">#002C77 · PMS 288C</div></div></div>
+      <div class="swatch"><div class="chip" style="background:#111317"></div><div class="meta"><div class="name">Black</div><div class="use">Body text</div><div class="hex">#000000 · Process Black</div></div></div>
+      <div class="swatch"><div class="chip" style="background:#fff;border-bottom:1px solid var(--line)"></div><div class="meta"><div class="name">White</div><div class="use">Backgrounds, space</div><div class="hex">#FFFFFF</div></div></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h3><span class="dot" style="background:var(--orange)"></span>Programme &amp; accent palette</h3>
+    <p class="sub">Each programme category owns a colour. Use them to code sections and callouts — never decoratively, never two strong accents fighting in one view.</p>
+    <div class="grid cols-4">
+      <div class="swatch"><div class="chip" style="background:#326430"></div><div class="meta"><div class="name">Green</div><div class="use">Forums &amp; conferences</div><div class="hex">#326430</div></div></div>
+      <div class="swatch"><div class="chip" style="background:#9BB33B"></div><div class="meta"><div class="name">Lime</div><div class="use">Masterclasses</div><div class="hex">#9BB33B</div></div></div>
+      <div class="swatch"><div class="chip" style="background:#7B293D"></div><div class="meta"><div class="name">Maroon</div><div class="use">Online &amp; blended</div><div class="hex">#7B293D</div></div></div>
+      <div class="swatch"><div class="chip" style="background:#9E191D"></div><div class="meta"><div class="name">Red</div><div class="use">Academic education</div><div class="hex">#9E191D</div></div></div>
+      <div class="swatch"><div class="chip" style="background:#C9632F"></div><div class="meta"><div class="name">Orange</div><div class="use">Entrepreneurship</div><div class="hex">#C9632F</div></div></div>
+      <div class="swatch"><div class="chip" style="background:#5C2F6F"></div><div class="meta"><div class="name">Purple</div><div class="use">Personal effectiveness</div><div class="hex">#5C2F6F</div></div></div>
+      <div class="swatch"><div class="chip" style="background:#007378"></div><div class="meta"><div class="name">Teal</div><div class="use">Digitisation &amp; corporate</div><div class="hex">#007378</div></div></div>
+      <div class="swatch"><div class="chip" style="background:#E4A024"></div><div class="meta"><div class="name">Yellow</div><div class="use">Marketing &amp; sales</div><div class="hex">#E4A024</div></div></div>
+      <div class="swatch"><div class="chip" style="background:#E3D4B7"></div><div class="meta"><div class="name">Linen</div><div class="use">Neutral filler — sparingly</div><div class="hex">#E3D4B7</div></div></div>
+      <div class="swatch"><div class="chip" style="background:#A4A9A8"></div><div class="meta"><div class="name">Grey</div><div class="use">Extended courses, dividers</div><div class="hex">#A4A9A8</div></div></div>
+    </div>
+    <div class="callout warn" style="margin-top:20px">
+      <div class="glyph">!</div>
+      <div class="body"><div class="ttl">Contrast first</div><p>Lime and Yellow are too light for white text or small text on white. Use them as fills behind dark text, or as accents — never as body-text colour. Check every pairing hits 4.5:1.</p></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h3><span class="dot" style="background:var(--teal)"></span>Type system</h3>
+    <p class="sub">Two primary typefaces: <b>Jubilat</b> for display, <b>Metric</b> for body. Use their varying weights to build hierarchy and visual interest. Where the licensed fonts aren't available (most digital and MS-based applications), the GIBS secondary typeface <b>Arial</b> is used to retain consistency. The examples below follow the <b>capitalisation convention</b> — Title Case for the Title, sentence case for Header and Subheader.</p>
+    <div class="card">
+      <div class="type-spec">
+        <div class="lbl">TITLE / H1<br>Jubilat Bold<br><span style="color:var(--teal)">Title Case</span></div>
+        <div class="demo"><div style="font-family:var(--slab);font-weight:700;font-size:40px;color:var(--blue);line-height:1.1">Managing Team Conflict</div></div>
+      </div>
+      <div class="type-spec">
+        <div class="lbl">HEADER / H2<br>Jubilat Bold<br><span style="color:var(--teal)">sentence case</span></div>
+        <div class="demo"><div style="font-family:var(--slab);font-weight:600;font-size:28px;color:var(--blue)">What you need to know first</div></div>
+      </div>
+      <div class="type-spec">
+        <div class="lbl">SUBHEADER / H3<br>Jubilat Light<br><span style="color:var(--teal)">sentence case</span></div>
+        <div class="demo"><div style="font-family:var(--slab);font-weight:300;font-size:21px;color:var(--blue)">Apply this concept to your workplace</div></div>
+      </div>
+      <div class="type-spec">
+        <div class="lbl">BODY<br>Metric Regular</div>
+        <div class="demo"><div style="font-size:17px;max-width:54ch">Body copy is set in a humanist sans at 17px with generous line height, so a busy professional can read it comfortably on any screen. Never below 16px.</div></div>
+      </div>
+      <div class="type-spec">
+        <div class="lbl">EMPHASIS<br>Metric Semibold</div>
+        <div class="demo"><div style="font-size:17px"><b>Bold</b> for emphasis within body copy — never ALL CAPS or italics for stress.</div></div>
+      </div>
+      <div class="type-spec">
+        <div class="lbl">FALLBACK<br>Arial / Tahoma</div>
+        <div class="demo"><div style="font-family:Arial,sans-serif;font-size:16px;color:var(--ink-soft)">Arial for digital &amp; MS documents; Tahoma for PowerPoint &amp; editable templates.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     05 · COMPONENTS
+     ============================================================ -->
+<section class="panel" id="p-components" role="tabpanel" aria-labelledby="t-components">
+  <div class="eyebrow">Live, on-brand patterns</div>
+  <h2>The component library.</h2>
+  <p class="intro">Build from these patterns rather than inventing new ones. Each example below is live and on-brand — copy the structure, swap the content, keep the behaviour. Everything here is keyboard-operable and meets contrast.</p>
+
+  <!-- Callouts -->
+  <div class="section">
+    <h3><span class="dot" style="background:var(--blue)"></span>Callout boxes</h3>
+    <p class="sub">Almost every GIBS course is built in Blackboard Ultra. Use Blackboard's four built-in callout boxes first — they're consistent, accessible and need no code. Build a custom callout only when none of the four fit.</p>
+
+    <h4 class="subhead-min">1 · Use Blackboard's native callouts first</h4>
+    <div class="grid cols-2">
+      <div class="bb-callout" style="--c:#002C77"><div class="bb-tag">Question</div><p>Pose a question, prompt reflection, or point learners to where they can ask for help.</p><span class="bb-meta">Blackboard native · blue</span></div>
+      <div class="bb-callout" style="--c:#E4A024"><div class="bb-tag" style="color:#8A5B00">Tip</div><p>A practical pointer, shortcut or piece of best practice from the field.</p><span class="bb-meta">Blackboard native · yellow</span></div>
+      <div class="bb-callout" style="--c:#5C2F6F"><div class="bb-tag">Key points</div><p>Summarise the must-remember ideas at the end of a section.</p><span class="bb-meta">Blackboard native · purple</span></div>
+      <div class="bb-callout" style="--c:#326430"><div class="bb-tag">Next steps</div><p>Tell learners what to do next, or how to progress through the module.</p><span class="bb-meta">Blackboard native · green</span></div>
+    </div>
+    <div class="callout warn" style="margin-top:18px"><div class="glyph">!</div><div class="body"><div class="ttl">Keep the colour meaning consistent</div><p>Always match the box to its purpose — blue for questions, yellow for tips, purple for key points, green for next steps — and use it the same way in every course.</p></div></div>
+
+    <h4 class="subhead-min" style="margin-top:36px">2 · Custom callout — the GIBS HTML standard</h4>
+    <p class="sub" style="margin-bottom:16px">When you need a type Blackboard doesn't offer — a note, a caution, a worked example — paste the snippet below into Blackboard's <b>&lt;/&gt; HTML view</b> and replace the bracketed text. It's deliberately <b>icon-free</b>: a coloured bar plus a bold text label carries the meaning reliably on every device and for screen-reader users, where icon fonts and emoji do not. Everything is inline-styled, so it renders correctly inside Blackboard without our stylesheet.</p>
+
+    <div class="demo-frame">
+      <div class="demo-label">Live preview — exactly what the HTML below produces</div>
+      <div role="note" style="margin:0 0 14px;padding:16px 20px;background:#ffffff;border:1px solid #E4DCCF;border-left:6px solid #002C77;border-radius:8px;font-family:Arial,Helvetica,sans-serif;">
+        <p style="margin:0 0 6px;font-size:14px;font-weight:bold;color:#002C77;">Question</p>
+        <p style="margin:0;font-size:16px;line-height:1.6;color:#20242C;">[Type your question or prompt here. Keep it to a few short sentences.]</p>
+      </div>
+      <div role="note" style="margin:0 0 14px;padding:16px 20px;background:#ffffff;border:1px solid #E4DCCF;border-left:6px solid #E4A024;border-radius:8px;font-family:Arial,Helvetica,sans-serif;">
+        <p style="margin:0 0 6px;font-size:14px;font-weight:bold;color:#8A5B00;">Tip</p>
+        <p style="margin:0;font-size:16px;line-height:1.6;color:#20242C;">[Type your practical pointer here.]</p>
+      </div>
+      <div role="note" style="margin:0;padding:16px 20px;background:#ffffff;border:1px solid #E4DCCF;border-left:6px solid #9E191D;border-radius:8px;font-family:Arial,Helvetica,sans-serif;">
+        <p style="margin:0 0 6px;font-size:14px;font-weight:bold;color:#9E191D;">Caution</p>
+        <p style="margin:0;font-size:16px;line-height:1.6;color:#20242C;">[Flag a common mistake or important caveat here.]</p>
+      </div>
+    </div>
+
+    <div class="codewrap">
+      <div class="codebar"><span>Custom callout · paste into Blackboard's &lt;/&gt; HTML view</span><button class="btn-copy" data-copy="cc-html" data-label="Copy HTML">Copy HTML</button></div>
+      <pre class="spec" id="cc-html">&lt;!-- GIBS custom callout — icon-free, inline styles. Swap the two colours + label per the table below. --&gt;
+&lt;div role="note" style="margin:16px 0; padding:16px 20px; background:#ffffff; border:1px solid #E4DCCF; border-left:6px solid #002C77; border-radius:8px; font-family:Arial, Helvetica, sans-serif;"&gt;
+  &lt;p style="margin:0 0 6px; font-size:14px; font-weight:bold; color:#002C77;"&gt;[Label – e.g. Question]&lt;/p&gt;
+  &lt;p style="margin:0; font-size:16px; line-height:1.6; color:#20242C;"&gt;[Type your text here. Keep it to a few short sentences.]&lt;/p&gt;
+&lt;/div&gt;</pre>
+    </div>
+
+    <p class="sub" style="margin-top:18px">To set the type, change the two colour values (the <b>border-left</b> bar and the label colour) and the label text. Approved colours:</p>
+    <table class="gibs">
+      <caption>Approved accent colours for custom callouts.</caption>
+      <thead><tr><th scope="col">Purpose</th><th scope="col">Bar colour</th><th scope="col">Label colour</th><th scope="col">Label text</th></tr></thead>
+      <tbody>
+        <tr><td>Question</td><td>#002C77</td><td>#002C77</td><td>Question</td></tr>
+        <tr><td>Tip</td><td>#E4A024</td><td>#8A5B00 <span style="color:var(--grey)">(darker for contrast)</span></td><td>Tip</td></tr>
+        <tr><td>Key points</td><td>#5C2F6F</td><td>#5C2F6F</td><td>Key points</td></tr>
+        <tr><td>Next steps</td><td>#326430</td><td>#326430</td><td>Next steps</td></tr>
+        <tr><td>Note / aside</td><td>#007378</td><td>#007378</td><td>Note</td></tr>
+        <tr><td>Caution</td><td>#9E191D</td><td>#9E191D</td><td>Caution</td></tr>
+      </tbody>
+    </table>
+
+    <div class="callout info" style="margin-top:18px"><div class="glyph">i</div><div class="body"><div class="ttl">Why no icons?</div><p>Icon fonts and emoji don't render the same on every device, and most add no meaning for screen-reader users. A bold colour bar plus a clear text label tells everyone what the box is — and the meaning never relies on colour alone. Keep the label in sentence case and the body to a few short sentences.</p></div></div>
+  </div>
+
+
+  <hr class="rule">
+
+  <!-- Pull quotes -->
+  <div class="section">
+    <h3><span class="dot" style="background:var(--lime)"></span>Pull quotes</h3>
+    <p class="sub">For a genuinely memorable line or an expert voice — not to break up text. Set in Jubilat, GIBS Blue, with a Lime rule. Always attribute.</p>
+    <div class="demo-frame">
+      <div class="pquote">
+        <p class="q">Strategy is what you choose <em>not</em> to do, as much as what you choose to do.</p>
+        <div class="cite">Prof. T. Mokoena<span>Faculty, Strategy &amp; Leadership</span></div>
+      </div>
+    </div>
+    <div class="dd">
+      <div class="dd-card do"><div class="dd-tag"><span class="ic">✓</span>Do</div><p class="ex">Use a short, quotable line. Keep it under ~20 words. Attribute every quote.</p></div>
+      <div class="dd-card no"><div class="dd-tag"><span class="ic">✕</span>Don't</div><p class="ex">Pull a whole paragraph, or use a quote as decoration where a callout belongs.</p></div>
+    </div>
+  </div>
+
+  <hr class="rule">
+
+  <!-- Images & alt text -->
+  <div class="section">
+    <h3><span class="dot" style="background:var(--orange)"></span>Images &amp; alt text</h3>
+    <p class="sub">Consistent sizing is non-negotiable — mismatched image dimensions are the fastest way to make a course look unfinished. Journalistic, warm, lightly desaturated photography (per the CI guide); people engaged and in conversation.</p>
+    <div class="grid cols-3">
+      <div><div class="imgph ratio-169"><span class="tag">16:9 · banner / header</span></div><p style="font-size:13px;color:var(--ink-soft);margin:8px 0 0">Module &amp; section headers. 1920×1080 source.</p></div>
+      <div><div class="imgph ratio-43"><span class="tag">4:3 · inline content</span></div><p style="font-size:13px;color:var(--ink-soft);margin:8px 0 0">In-flow supporting images. 1200×900.</p></div>
+      <div><div class="imgph ratio-11"><span class="tag">1:1 · avatar / icon</span></div><p style="font-size:13px;color:var(--ink-soft);margin:8px 0 0">Faculty, thumbnails. 600×600.</p></div>
+    </div>
+    <div class="callout info" style="margin-top:20px"><div class="glyph">i</div><div class="body"><div class="ttl">Sizing rule</div><p>Pick the ratio by role and stick to it across the whole course. Same role = same dimensions, every time. Export at 2× for retina; compress to under 300&nbsp;KB.</p></div></div>
+    <div class="dd" style="margin-top:18px">
+      <div class="dd-card do"><div class="dd-tag"><span class="ic">✓</span>Good alt text</div><p class="ex">alt="Three colleagues reviewing a strategy map on a whiteboard, mid-discussion"</p><p class="ex" style="font-size:13px;color:var(--ink-soft);margin-top:8px">Describes what matters for the learning point. Decorative image? alt="".</p></div>
+      <div class="dd-card no"><div class="dd-tag"><span class="ic">✕</span>Poor alt text</div><p class="ex muted">alt="image" · alt="IMG_4821.jpg" · alt="photo of people" · <em>(missing entirely)</em></p></div>
+    </div>
+  </div>
+
+  <hr class="rule">
+
+  <!-- HTML interactives -->
+  <div class="section">
+    <h3><span class="dot" style="background:var(--purple)"></span>HTML interactives</h3>
+    <p class="sub">Flip cards, accordions, and tabs. Use them to chunk content and invite engagement — never to hide essential information a learner needs in sequence. All three must work with a keyboard and screen reader.</p>
+
+    <div class="demo-frame">
+      <div class="demo-label">Flip card — click or press Enter to reveal</div>
+      <div class="grid cols-3">
+        <div class="flip" tabindex="0" role="button" aria-pressed="false" aria-label="Flip card: What is a stakeholder?">
+          <div class="flip-inner">
+            <div class="flip-face flip-front"><div class="ttl">What is a stakeholder?</div><div class="hint">CLICK TO FLIP</div></div>
+            <div class="flip-face flip-back">Anyone affected by, or able to affect, a decision — inside or outside the organisation.</div>
+          </div>
+        </div>
+        <div class="flip" tabindex="0" role="button" aria-pressed="false" aria-label="Flip card: Define scope creep">
+          <div class="flip-inner">
+            <div class="flip-face flip-front"><div class="ttl">Define: scope creep</div><div class="hint">CLICK TO FLIP</div></div>
+            <div class="flip-face flip-back">The gradual, unmanaged expansion of a project's goals beyond what was agreed.</div>
+          </div>
+        </div>
+        <div class="flip" tabindex="0" role="button" aria-pressed="false" aria-label="Flip card: Sunk cost">
+          <div class="flip-inner">
+            <div class="flip-face flip-front"><div class="ttl">Sunk cost</div><div class="hint">CLICK TO FLIP</div></div>
+            <div class="flip-face flip-back">Money already spent and unrecoverable. It should not influence future decisions.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="demo-frame">
+      <div class="demo-label">Accordion — for layered or optional detail</div>
+      <details class="acc"><summary>When should I use an accordion?<span class="chev">+</span></summary><div class="acc-body"><p>For supplementary detail, FAQs, or optional deep-dives — content a learner can choose to expand. Keep essential, sequential learning visible by default.</p></div></details>
+      <details class="acc"><summary>How much goes in one panel?<span class="chev">+</span></summary><div class="acc-body"><p>A short paragraph or a tight list. If a panel runs long, it's probably its own section.</p></div></details>
+      <details class="acc"><summary>Is it accessible?<span class="chev">+</span></summary><div class="acc-body"><p>Built on native &lt;details&gt;/&lt;summary&gt;, so it's keyboard- and screen-reader-friendly out of the box. Prefer it over custom JavaScript toggles.</p></div></details>
+    </div>
+
+    <div class="demo-frame">
+      <div class="demo-label">Tabs — for parallel, comparable content</div>
+      <div class="mtabs">
+        <div class="mtabs-nav" role="tablist" aria-label="Example tabs">
+          <button class="mtab" role="tab" aria-selected="true" aria-controls="mt1">Theory</button>
+          <button class="mtab" role="tab" aria-selected="false" aria-controls="mt2">Example</button>
+          <button class="mtab" role="tab" aria-selected="false" aria-controls="mt3">Apply</button>
+        </div>
+        <div class="mtab-panel active" id="mt1" role="tabpanel">The concept explained plainly, in one short paragraph the learner can grasp on first read.</div>
+        <div class="mtab-panel" id="mt2" role="tabpanel">A concrete, ideally South African or African, example that makes the concept real.</div>
+        <div class="mtab-panel" id="mt3" role="tabpanel">A prompt that asks the learner to apply the concept to their own organisation.</div>
+      </div>
+    </div>
+
+    <div class="callout warn"><div class="glyph">!</div><div class="body"><div class="ttl">Interaction rule</div><p>An interactive must add value, not just movement. If the same content reads fine as plain text, use plain text. Never put assessed or required content behind an optional interaction.</p></div></div>
+  </div>
+
+  <hr class="rule">
+
+  <!-- Headings & module structure -->
+  <div class="section">
+    <h3><span class="dot" style="background:var(--teal)"></span>Headings &amp; module structure</h3>
+    <p class="sub">Every course follows the same rhythm, so learners never have to relearn the layout. Headings nest in order — never skip a level for visual effect.</p>
+    <div class="grid cols-2">
+      <div class="card">
+        <h4 style="font-size:17px;margin-bottom:12px">Heading hierarchy</h4>
+        <div style="font-family:var(--mono);font-size:13px;line-height:1.95;color:var(--ink-soft)">
+          <div><b style="color:var(--blue)">Title</b> (H1) — page title · <span style="color:var(--grey)">Title Case</span></div>
+          <div style="padding-left:18px"><b style="color:var(--blue)">Header</b> (H2) — section · <span style="color:var(--grey)">sentence case</span></div>
+          <div style="padding-left:36px"><b style="color:var(--blue)">Subheader</b> (H3) — subsection · <span style="color:var(--grey)">sentence case</span></div>
+          <div style="padding-left:54px"><b style="color:var(--blue)">Paragraph</b> — body · <span style="color:var(--grey)">sentence case</span></div>
+        </div>
+        <p style="font-size:13px;color:var(--ink-soft);margin:12px 0 0">Use in order — never skip a level for visual effect.</p>
+      </div>
+      <div class="card">
+        <h4 style="font-size:17px;margin-bottom:12px">Standard module flow</h4>
+        <ol style="margin:0;padding-left:20px;font-size:15px;color:var(--ink-soft);line-height:1.9">
+          <li><b style="color:var(--blue)">Overview</b> — what &amp; why, time to complete</li>
+          <li><b style="color:var(--blue)">Learning outcomes</b> — what you'll be able to do</li>
+          <li><b style="color:var(--blue)">Content</b> — sections, chunked</li>
+          <li><b style="color:var(--blue)">Activity / interaction</b> — apply it</li>
+          <li><b style="color:var(--blue)">Summary</b> — key takeaways &amp; next step</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <hr class="rule">
+
+  <!-- Learning outcomes -->
+  <div class="section">
+    <h3><span class="dot" style="background:var(--green)"></span>Learning outcomes</h3>
+    <p class="sub">Backward design starts here. Write outcomes first, then build content that earns them. Measurable, observable verbs only.</p>
+    <div class="card">
+      <p style="font-family:var(--slab);font-weight:600;font-size:18px;color:var(--blue);margin-bottom:10px">By the end of this module, you will be able to…</p>
+      <p style="font-size:15.5px;margin:0">…<b>analyse</b> a stakeholder map to identify competing interests, and <b>recommend</b> a sequencing strategy for a change initiative.</p>
+    </div>
+    <div class="dd" style="margin-top:18px">
+      <div class="dd-card do"><div class="dd-tag"><span class="ic">✓</span>Measurable verbs</div><p class="ex">analyse · evaluate · design · apply · compare · recommend · build · diagnose</p></div>
+      <div class="dd-card no"><div class="dd-tag"><span class="ic">✕</span>Vague / unmeasurable</div><p class="ex muted">understand · know · learn about · be aware of · appreciate · be familiar with</p></div>
+    </div>
+  </div>
+
+  <hr class="rule">
+
+  <!-- Tables -->
+  <div class="section">
+    <h3><span class="dot" style="background:var(--maroon)"></span>Tables &amp; data</h3>
+    <p class="sub">Tables are for genuine comparison, not layout. Real header cells, a caption, and only the data that earns its place — no decorative numbers.</p>
+    <div class="demo-frame">
+      <table class="gibs">
+        <caption>Table 1 — Choosing an interaction type by purpose.</caption>
+        <thead><tr><th scope="col">Pattern</th><th scope="col">Best for</th><th scope="col">Avoid when</th></tr></thead>
+        <tbody>
+          <tr><td>Flip card</td><td>Term + definition, prompt + answer</td><td>Content must be read in order</td></tr>
+          <tr><td>Accordion</td><td>Optional detail, FAQs</td><td>Essential, sequential learning</td></tr>
+          <tr><td>Tabs</td><td>Parallel, comparable views</td><td>One continuous narrative</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <hr class="rule">
+
+  <!-- Video -->
+  <div class="section">
+    <h3><span class="dot" style="background:var(--yellow)"></span>Video &amp; captions</h3>
+    <p class="sub">Captions and a transcript are mandatory — not optional extras. Video is 16:9, with a clear, plain-language title.</p>
+    <div class="demo-frame">
+      <div class="imgph ratio-169" style="position:relative"><span class="tag">16:9 · video player</span>
+        <div style="position:absolute;bottom:14px;left:14px;background:rgba(17,19,23,.82);color:#fff;font-size:13px;padding:5px 12px;border-radius:6px">Captions on by default — clear, accurate, synced</div>
+      </div>
+    </div>
+    <ul class="check-list">
+      <li><span class="box">✓</span><div><b>Accurate closed captions</b> on every video (WCAG 1.2.2). No auto-captions left unchecked.</div></li>
+      <li><span class="box">✓</span><div><b>A full text transcript</b> available alongside the player.</div></li>
+      <li><span class="box">✓</span><div><b>No essential info conveyed by audio alone.</b> Key points also appear on screen or in text.</div></li>
+      <li><span class="box">✓</span><div><b>Player controls are keyboard-operable</b> and don't autoplay with sound.</div></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================================================
+     06 · ACCESSIBILITY
+     ============================================================ -->
+<section class="panel" id="p-access" role="tabpanel" aria-labelledby="t-access">
+  <div class="eyebrow">UDL + WCAG 2.1 AA</div>
+  <h2>Accessible by default.</h2>
+  <p class="intro">Accessibility isn't a final check — it's how we design from the first draft. Universal Design for Learning tells us to offer more than one way in; WCAG gives us the measurable baseline.</p>
+
+  <div class="section">
+    <h3><span class="dot" style="background:var(--teal)"></span>The three UDL principles</h3>
+    <p class="sub">Build choice in. Different learners access, engage with, and demonstrate learning differently.</p>
+    <div class="grid cols-3">
+      <div class="udl" style="background:var(--blue)"><div class="n">PRINCIPLE 01</div><h4>Multiple means of representation</h4><p>Offer content in more than one form — text, visual, audio, video — so the "what" of learning is reachable for everyone.</p></div>
+      <div class="udl" style="background:var(--teal)"><div class="n">PRINCIPLE 02</div><h4>Multiple means of engagement</h4><p>Give learners reasons to care and ways to connect — relevant examples, choice, and the "why" of learning.</p></div>
+      <div class="udl" style="background:var(--purple)"><div class="n">PRINCIPLE 03</div><h4>Multiple means of action &amp; expression</h4><p>Let learners show what they know in more than one way — the "how" of learning.</p></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h3><span class="dot" style="background:var(--green)"></span>WCAG ship-checklist</h3>
+    <p class="sub">Run this against every asset before it goes into a course.</p>
+    <div class="grid cols-2">
+      <ul class="check-list">
+        <li><span class="box">✓</span><div><b>Colour contrast ≥ 4.5:1</b> for text (3:1 for large text &amp; UI).<span class="d">Never use Lime or Yellow for text on white.</span></div></li>
+        <li><span class="box">✓</span><div><b>Alt text on every meaningful image;</b> empty alt for decorative.</div></li>
+        <li><span class="box">✓</span><div><b>Headings in logical order</b> — H1→H2→H3, never skipped.</div></li>
+        <li><span class="box">✓</span><div><b>Captions + transcript</b> on all video and audio.</div></li>
+      </ul>
+      <ul class="check-list">
+        <li><span class="box">✓</span><div><b>Everything works by keyboard</b> — every interactive, in a logical tab order.</div></li>
+        <li><span class="box">✓</span><div><b>Meaning never by colour alone</b> — pair it with text or an icon.</div></li>
+        <li><span class="box">✓</span><div><b>Descriptive link text</b> — "download the case study", not "click here".</div></li>
+        <li><span class="box">✓</span><div><b>Body text ≥ 16px</b> and reflows without breaking when zoomed to 200%.</div></li>
+      </ul>
+    </div>
+    <div class="callout reflect" style="margin-top:20px"><div class="glyph">?</div><div class="body"><div class="ttl">Quick gut-check</div><p>Could a learner using only a keyboard, or only a screen reader, or with low vision, complete this exactly as intended? If you're not sure, it's not ready.</p></div></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     07 · AI ASSISTANT
+     ============================================================ -->
+<section class="panel" id="p-ai" role="tabpanel" aria-labelledby="t-ai">
+  <div class="eyebrow">A GIBS standard</div>
+  <h2>Every course has an AI study assistant.</h2>
+  <p class="intro">An embedded AI assistant is now part of the standard course build — a always-available study companion that helps learners check understanding, find content, and stay unstuck. It must feel like GIBS: warm, credible, and genuinely helpful.</p>
+
+  <div class="section">
+    <h3><span class="dot" style="background:var(--blue)"></span>What it is — and isn't</h3>
+    <div class="dd">
+      <div class="dd-card do"><div class="dd-tag"><span class="ic">✓</span>It should</div><p class="ex">Answer questions about the course content. Explain a concept another way. Point to the right module. Offer practice questions. Encourage a stuck learner.</p></div>
+      <div class="dd-card no"><div class="dd-tag"><span class="ic">✕</span>It shouldn't</div><p class="ex muted">Do assessed work for the learner. Invent facts beyond the course. Replace faculty contact. Make decisions a human should own.</p></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h3><span class="dot" style="background:var(--lime)"></span>Voice &amp; placement</h3>
+    <div class="grid cols-2" style="align-items:start">
+      <div>
+        <ul class="check-list">
+          <li><span class="box">✓</span><div><b>Same warm, human voice</b> as the rest of the course. The assistant is a colleague, not a chatbot.</div></li>
+          <li><span class="box">✓</span><div><b>Persistent, predictable placement</b> — same corner, every module.</div></li>
+          <li><span class="box">✓</span><div><b>Clearly labelled as AI,</b> with a note on what it can and can't do.</div></li>
+          <li><span class="box">✓</span><div><b>Fully accessible</b> — keyboard, screen reader, and readable contrast.</div></li>
+          <li><span class="box">✓</span><div><b>Honest about limits</b> — "I'm not sure, here's who to ask" beats a confident wrong answer.</div></li>
+        </ul>
+      </div>
+      <div class="ai-mock">
+        <div class="ai-head">
+          <div class="avatar">G</div>
+          <div class="who">GIBS Study Assistant<span>Here to help — not to grade</span></div>
+        </div>
+        <div class="ai-body">
+          <div class="bub ai">Hi — I can explain a concept, point you to the right section, or set you a quick practice question. What are you working on?</div>
+          <div class="bub me">Can you explain sunk cost simply?</div>
+          <div class="bub ai">Of course. A sunk cost is money you've already spent and can't get back. The key idea: don't let it drive future choices. Want a quick example from the case study?</div>
+        </div>
+        <div class="ai-foot"><div class="inp">Ask the assistant…</div><div class="send">→</div></div>
+      </div>
+    </div>
+    <div class="callout warn" style="margin-top:20px"><div class="glyph">!</div><div class="body"><div class="ttl">Tone guardrail</div><p>Warm, never cutesy. No emoji-spam, no exclamation pile-ups, no pretending to be human. Helpful and honest is the brand.</p></div></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     08 · TOOLKIT
+     ============================================================ -->
+<section class="panel" id="p-toolkit" role="tabpanel" aria-labelledby="t-toolkit">
+  <div class="eyebrow">Working tools, not just rules</div>
+  <h2>The toolkit.</h2>
+  <p class="intro">Two helpers that put this guide to work. Both run entirely in your browser — nothing is sent anywhere, so they work offline and on any host.</p>
+
+  <!-- ===== Spelling troubleshooter ===== -->
+  <div class="section">
+    <h3><span class="dot" style="background:var(--blue)"></span>UK / SA spelling troubleshooter</h3>
+    <p class="sub">Paste a word, sentence, or paragraph. It flags US spellings and suggests the GIBS UK/SA form — and quietly points out a few jargon and AI-tells while it's at it.</p>
+    <div class="tool">
+      <div class="tool-hd"><h4>Check my spelling</h4><span class="tag-mono">UK / SA English</span></div>
+      <p class="tool-note">A rules-and-dictionary check for the common US→UK/SA differences (‑ize→‑ise, color→colour, center→centre, program→programme, and more). It won't catch every word — treat it as a fast first pass, not a replacement for proofreading.</p>
+      <label class="field-label" for="sp-in">Your text</label>
+      <textarea class="t-area" id="sp-in" placeholder="e.g. Our organization will finalize the color of the program center&hellip;"></textarea>
+      <div class="try-chips">
+        <span>Try:</span>
+        <button class="chip-btn" data-try="Our organization will finalize the color of the program center.">a sample sentence</button>
+        <button class="chip-btn" data-try="colour">colour</button>
+        <button class="chip-btn" data-try="analyze">analyze</button>
+        <button class="chip-btn" data-try="We must leverage synergies to optimize the catalog.">jargon test</button>
+      </div>
+      <div class="btn-row">
+        <button class="btn btn-primary" id="sp-go">Check spelling</button>
+        <button class="btn btn-ghost" id="sp-clear">Clear</button>
+      </div>
+      <div id="sp-result" aria-live="polite"></div>
+    </div>
+  </div>
+
+  <hr class="rule">
+
+  <!-- ===== Approved-word register ===== -->
+  <div class="section">
+    <h3><span class="dot" style="background:var(--green)"></span>GIBS approved words</h3>
+    <p class="sub">Some words are correct in more than one form — "self-reflection" and "self reflection" are both valid UK/SA spelling. To keep courses consistent, GIBS picks one. Add the preferred forms here and the spelling troubleshooter will flag the others and suggest the GIBS form.</p>
+    <div class="tool">
+      <div class="tool-hd"><h4>Approved-word register</h4><span class="tag-mono">House style</span></div>
+      <p class="tool-note">Saved in your browser. To share one canonical list across the team, export it and commit it with the guide — everyone then gets the same list on the next deploy.</p>
+      <table class="gibs" id="aw-table">
+        <caption>Preferred GIBS spellings and the variants to avoid.</caption>
+        <thead><tr><th scope="col">Use this</th><th scope="col">Instead of</th><th scope="col">Note</th><th scope="col" style="width:44px"><span class="sr-only">Remove</span></th></tr></thead>
+        <tbody id="aw-body"></tbody>
+      </table>
+      <div class="aw-add">
+        <input class="t-input" id="aw-pref" placeholder="Preferred, e.g. self-reflection" aria-label="Preferred form">
+        <input class="t-input" id="aw-avoid" placeholder="Avoid, e.g. self reflection" aria-label="Form to avoid">
+        <input class="t-input" id="aw-note" placeholder="Note (optional)" aria-label="Note">
+        <button class="btn btn-primary" id="aw-add">Add</button>
+      </div>
+      <div class="btn-row">
+        <button class="btn btn-ghost" id="aw-export">Export list (JSON)</button>
+        <button class="btn btn-ghost" id="aw-import-btn">Import list…</button>
+        <input type="file" id="aw-import" accept="application/json,.json" hidden>
+        <button class="btn btn-ghost" id="aw-reset">Reset to defaults</button>
+      </div>
+      <div class="pm-note" style="margin-top:6px"><b>Sharing across the team ·</b> Until the guide has a shared backend, the reliable way to keep one list is to export the JSON, commit it alongside the guide, and re-deploy. I can wire that up for you.</div>
+    </div>
+  </div>
+
+  <hr class="rule">
+
+  <!-- ===== Reword with AI ===== -->
+  <div class="section">
+    <h3><span class="dot" style="background:var(--maroon)"></span>Reword with AI</h3>
+    <p class="sub">Paste a paragraph and have it rewritten to GIBS conventions — active voice, plain language, UK/SA spelling, our number rule. Runs through a secure GIBS endpoint; your text isn't stored.</p>
+    <div class="tool">
+      <div class="tool-hd"><h4>Reword a paragraph</h4><span class="tag-mono">Beta · needs setup</span></div>
+      <p class="tool-note">This calls a Netlify Function that holds the GIBS Anthropic key. If you see a "not connected" message, the function still needs to be deployed (see the setup steps).</p>
+      <label class="field-label">What should it do?</label>
+      <div class="seg" id="rw-seg" role="group" aria-label="Reword mode">
+        <button class="opt" data-mode="active" aria-pressed="true">Make active</button>
+        <button class="opt" data-mode="plain" aria-pressed="false">Plain language</button>
+        <button class="opt" data-mode="concise" aria-pressed="false">Shorten</button>
+        <button class="opt" data-mode="gibs" aria-pressed="false">Apply all GIBS conventions</button>
+      </div>
+      <label class="field-label" for="rw-in" style="margin-top:16px">Your text</label>
+      <textarea class="t-area" id="rw-in" placeholder="Paste a paragraph to reword…"></textarea>
+      <div class="btn-row">
+        <button class="btn btn-primary" id="rw-go">Reword</button>
+        <button class="btn btn-ghost" id="rw-clear">Clear</button>
+      </div>
+      <div id="rw-result" aria-live="polite"></div>
+    </div>
+  </div>
+
+  <hr class="rule">
+
+  <!-- ===== Idea generator ===== -->
+  <div class="section">
+    <h3><span class="dot" style="background:var(--purple)"></span>HTML interactive idea generator</h3>
+    <p class="sub">Tell it what you want learners to do. It suggests an interaction pattern with its UDL rationale and a WCAG checklist tailored to that pattern — so accessibility is baked in from the idea stage.</p>
+    <div class="tool">
+      <div class="tool-hd"><h4>Generate an idea</h4><span class="tag-mono">UDL + WCAG 2.1 AA</span></div>
+      <p class="tool-note">Pick a learning intent and, if you like, narrow by a UDL principle. Each idea comes with why it works and how to build it accessibly.</p>
+
+      <label class="field-label">1 &middot; What do you want learners to do?</label>
+      <div class="seg" id="intent-seg" role="group" aria-label="Learning intent">
+        <button class="opt" data-intent="recall" aria-pressed="true">Recall &amp; define</button>
+        <button class="opt" data-intent="compare" aria-pressed="false">Compare &amp; contrast</button>
+        <button class="opt" data-intent="apply" aria-pressed="false">Apply to a scenario</button>
+        <button class="opt" data-intent="sequence" aria-pressed="false">Sequence a process</button>
+        <button class="opt" data-intent="explore" aria-pressed="false">Explore &amp; discover</button>
+        <button class="opt" data-intent="reflect" aria-pressed="false">Reflect &amp; self-assess</button>
+        <button class="opt" data-intent="check" aria-pressed="false">Check understanding</button>
+      </div>
+
+      <div class="gen-controls">
+        <div>
+          <label class="field-label" for="udl-filter">2 &middot; UDL emphasis (optional)</label>
+          <select class="t-select" id="udl-filter">
+            <option value="any">Any UDL principle</option>
+            <option value="representation">Multiple means of representation</option>
+            <option value="engagement">Multiple means of engagement</option>
+            <option value="action">Multiple means of action &amp; expression</option>
+          </select>
+        </div>
+        <div class="btn-row" style="margin-top:0">
+          <button class="btn btn-primary" id="gen-go">Generate idea</button>
+        </div>
+      </div>
+
+      <div id="idea-out" aria-live="polite"></div>
+    </div>
+  </div>
+</section>
+
+<!-- AI build-prompt pop-out -->
+<div class="modal-backdrop" id="prompt-modal" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="pm-title">
+    <header>
+      <div>
+        <h3 id="pm-title">AI build prompt</h3>
+        <span class="pm-sub" id="pm-sub">Ready to paste into your AI tool</span>
+      </div>
+      <button class="modal-x" id="pm-close" aria-label="Close prompt">&times;</button>
+    </header>
+    <div class="modal-body">
+      <p class="muted">Pick the tool you'll build with, then copy the prompt. It already includes the GIBS brand, UDL and WCAG requirements for this interaction — just fill in your topic and content where shown in [BRACKETS].</p>
+      <label class="field-label">Which tool are you using?</label>
+      <div class="seg" id="tool-seg" role="group" aria-label="AI tool">
+        <button class="opt" data-tool="claude-code" aria-pressed="true">Claude Code</button>
+        <button class="opt" data-tool="chat" aria-pressed="false">Claude / ChatGPT</button>
+        <button class="opt" data-tool="editor" aria-pressed="false">Cursor / Copilot</button>
+      </div>
+      <label class="field-label" for="pm-text" style="margin-top:18px">Your prompt</label>
+      <textarea class="t-area" id="pm-text" readonly spellcheck="false"></textarea>
+      <div class="btn-row">
+        <button class="btn btn-primary" id="pm-copy">Copy prompt</button>
+        <button class="btn btn-ghost" id="pm-close2">Close</button>
+        <span id="pm-copied" aria-live="polite">Copied ✓</span>
+      </div>
+      <div class="pm-note"><b>How to use&nbsp;·</b> Paste into your tool, replace the [BRACKETED] placeholders with your real topic and content, and ask it to build. When it's done, run it through the WCAG checklist in this guide before adding it to your course.</div>
+    </div>
+  </div>
+</div>
+
+</main>
+
+<!-- Team notes (per-tab) -->
+<button class="notes-fab" id="notes-fab" hidden aria-expanded="false">Notes<span class="notes-count" id="notes-count" hidden>0</span></button>
+<div class="notes-drawer" id="notes-drawer" hidden role="dialog" aria-label="Team notes">
+  <div class="notes-hd">
+    <div>
+      <div class="notes-title">Team notes</div>
+      <div class="notes-sub" id="notes-tab-label">This page</div>
+    </div>
+    <button class="modal-x" id="notes-close" aria-label="Close notes">&times;</button>
+  </div>
+  <div class="notes-list" id="notes-list"></div>
+  <form class="notes-form" id="notes-form">
+    <div class="notes-row">
+      <input class="t-input" id="note-name" placeholder="Your name" aria-label="Your name">
+      <select class="t-select" id="note-kind" aria-label="Note type">
+        <option value="question">Question</option>
+        <option value="suggestion">Suggestion</option>
+      </select>
+    </div>
+    <textarea class="t-area" id="note-text" placeholder="Add a question or suggestion about this page…" aria-label="Your note"></textarea>
+    <input class="t-input" id="note-pass" type="password" placeholder="Team passcode" aria-label="Team passcode">
+    <div class="notes-actions">
+      <button type="submit" class="btn btn-primary" id="note-post">Post note</button>
+      <span id="note-msg" aria-live="polite"></span>
+    </div>
+  </form>
+</div>
+
+<footer class="footer">
+  <div><b>GIBS Brand &amp; Content Style Guide</b> · for the Instructional Design team · v1.0</div>
+  <div>Globally accredited, proudly African. · Last updated June 2026</div>
+</footer>
+
+<script src="assets/guide.js"></script>
+<script src="assets/tools.js"></script>
+</body>
+</html>
