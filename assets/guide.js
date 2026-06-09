@@ -4,14 +4,19 @@
 (function () {
   "use strict";
 
-  /* ---- Main tab navigation ---- */
-  var tabs = Array.prototype.slice.call(document.querySelectorAll('.tabbar .tab'));
+  /* ---- Main nav ---- */
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('.sidenav .sidenav-item'));
   var panels = Array.prototype.slice.call(document.querySelectorAll('main > .panel'));
+  var mobileSectionName = document.getElementById('mobile-section-name');
 
   function activate(id, push) {
     tabs.forEach(function (t) {
       var on = t.id === id;
       t.setAttribute('aria-selected', on ? 'true' : 'false');
+      if (on && mobileSectionName) {
+        var lbl = t.querySelector('.nav-label');
+        if (lbl) mobileSectionName.textContent = lbl.textContent;
+      }
     });
     panels.forEach(function (p) {
       p.classList.toggle('active', p.id === 'p-' + id.slice(2));
@@ -24,9 +29,12 @@
   }
 
   tabs.forEach(function (t, i) {
-    t.addEventListener('click', function () { activate(t.id, true); });
+    t.addEventListener('click', function () {
+      activate(t.id, true);
+      closeNav();
+    });
     t.addEventListener('keydown', function (e) {
-      var dir = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
+      var dir = e.key === 'ArrowDown' ? 1 : e.key === 'ArrowUp' ? -1 : 0;
       if (!dir) return;
       e.preventDefault();
       var next = (i + dir + tabs.length) % tabs.length;
@@ -48,6 +56,34 @@
     } catch (e) {}
   }
   if (start) activate(start, false);
+
+  /* ---- Mobile hamburger ---- */
+  var navToggle  = document.getElementById('nav-toggle');
+  var navSidenav = document.getElementById('sidenav');
+  var navOverlay = document.getElementById('nav-overlay');
+
+  function openNav() {
+    navToggle.setAttribute('aria-expanded', 'true');
+    navSidenav.classList.add('open');
+    navOverlay.classList.add('show');
+    navOverlay.removeAttribute('aria-hidden');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeNav() {
+    if (!navToggle) return;
+    navToggle.setAttribute('aria-expanded', 'false');
+    navSidenav.classList.remove('open');
+    navOverlay.classList.remove('show');
+    navOverlay.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  }
+
+  if (navToggle) {
+    navToggle.addEventListener('click', function () {
+      navSidenav.classList.contains('open') ? closeNav() : openNav();
+    });
+  }
+  if (navOverlay) navOverlay.addEventListener('click', closeNav);
 
   /* ---- Flip cards ---- */
   document.querySelectorAll('.flip').forEach(function (card) {

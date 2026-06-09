@@ -28,20 +28,32 @@
   </div>
 </header>
 
-<!-- ============ TAB BAR ============ -->
-<div class="tabbar-wrap">
-  <nav class="tabbar" role="tablist" aria-label="Style guide sections">
-    <button class="tab" role="tab" id="t-overview" aria-controls="p-overview" aria-selected="true"><span class="num">01</span>Overview</button>
-    <button class="tab" role="tab" id="t-voice" aria-controls="p-voice" aria-selected="false"><span class="num">02</span>Voice &amp; Tone</button>
-    <button class="tab" role="tab" id="t-writing" aria-controls="p-writing" aria-selected="false"><span class="num">03</span>Writing</button>
-    <button class="tab" role="tab" id="t-brand" aria-controls="p-brand" aria-selected="false"><span class="num">04</span>Colour &amp; Type</button>
-    <button class="tab" role="tab" id="t-components" aria-controls="p-components" aria-selected="false"><span class="num">05</span>Components</button>
-    <button class="tab" role="tab" id="t-access" aria-controls="p-access" aria-selected="false"><span class="num">06</span>Accessibility</button>
-    <button class="tab" role="tab" id="t-ai" aria-controls="p-ai" aria-selected="false"><span class="num">07</span>AI Assistant</button>
-    <button class="tab" role="tab" id="t-toolkit" aria-controls="p-toolkit" aria-selected="false"><span class="num">08</span>Toolkit</button>
-  </nav>
+<!-- ============ MOBILE BAR ============ -->
+<div class="mobile-bar">
+  <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-label="Open navigation">
+    <span class="ham-bar"></span><span class="ham-bar"></span><span class="ham-bar"></span>
+  </button>
+  <span class="mobile-section-name" id="mobile-section-name">Overview</span>
 </div>
+<div class="nav-overlay" id="nav-overlay" aria-hidden="true"></div>
 
+<!-- ============ PAGE BODY ============ -->
+<div class="page-body">
+
+  <nav class="sidenav" id="sidenav" role="tablist" aria-label="Style guide sections">
+    <div class="sidenav-head">GIBS Style Guide</div>
+    <button class="sidenav-item" role="tab" id="t-overview" aria-controls="p-overview" aria-selected="true"  style="--c:#002C77"><span class="nav-num">01</span><span class="nav-label">Overview</span></button>
+    <button class="sidenav-item" role="tab" id="t-voice"    aria-controls="p-voice"    aria-selected="false" style="--c:#007378"><span class="nav-num">02</span><span class="nav-label">Voice &amp; Tone</span></button>
+    <button class="sidenav-item" role="tab" id="t-writing"  aria-controls="p-writing"  aria-selected="false" style="--c:#326430"><span class="nav-num">03</span><span class="nav-label">Writing</span></button>
+    <button class="sidenav-item" role="tab" id="t-brand"    aria-controls="p-brand"    aria-selected="false" style="--c:#E4A024;--c-text:#7A4900"><span class="nav-num">04</span><span class="nav-label">Colour &amp; Type</span></button>
+    <button class="sidenav-item" role="tab" id="t-components" aria-controls="p-components" aria-selected="false" style="--c:#5C2F6F"><span class="nav-num">05</span><span class="nav-label">Components</span></button>
+    <button class="sidenav-item" role="tab" id="t-bb"       aria-controls="p-bb"       aria-selected="false" style="--c:#9BB33B;--c-text:#4A5E17"><span class="nav-num">06</span><span class="nav-label">BB Conventions</span></button>
+    <button class="sidenav-item" role="tab" id="t-access"   aria-controls="p-access"   aria-selected="false" style="--c:#9E191D"><span class="nav-num">07</span><span class="nav-label">Accessibility</span></button>
+    <button class="sidenav-item" role="tab" id="t-ai"       aria-controls="p-ai"       aria-selected="false" style="--c:#C9632F"><span class="nav-num">08</span><span class="nav-label">AI Assistant</span></button>
+    <button class="sidenav-item" role="tab" id="t-toolkit"  aria-controls="p-toolkit"  aria-selected="false" style="--c:#7B293D"><span class="nav-num">09</span><span class="nav-label">Toolkit</span></button>
+  </nav>
+
+  <div class="page-content">
 <main>
 
 <!-- ============================================================
@@ -635,7 +647,209 @@
 </section>
 
 <!-- ============================================================
-     06 · ACCESSIBILITY
+     06 · BB CONVENTIONS
+     ============================================================ -->
+<section class="panel" id="p-bb" role="tabpanel" aria-labelledby="t-bb">
+  <div class="eyebrow">Blackboard Ultra · Course Structure</div>
+  <h2>Course structure and naming conventions.</h2>
+  <p class="intro">GIBS Digital Education uses a consistent naming convention to help learners understand where they are in a course and how each learning item fits into the broader learning journey. The rule is simple: name for navigation first — every item should tell the learner what it is, where it fits, and what they are expected to do with it.</p>
+
+  <!-- Hierarchy -->
+  <div class="section">
+    <h3><span class="dot" style="background:var(--blue)"></span>The course hierarchy</h3>
+    <p class="sub">Five levels, each with a clear GIBS meaning, a Blackboard Ultra equivalent, and a consistent naming convention. Use these deliberately and uniformly across every course.</p>
+    <div class="demo-frame" style="overflow-x:auto">
+      <table class="gibs">
+        <caption>Table 1 — GIBS course hierarchy mapped to Blackboard Ultra.</caption>
+        <thead>
+          <tr>
+            <th scope="col">Level</th>
+            <th scope="col">GIBS meaning</th>
+            <th scope="col">Blackboard Ultra equivalent</th>
+            <th scope="col">Naming convention</th>
+            <th scope="col">Example</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><b>Programme</b></td>
+            <td>Full academic offering or qualification</td>
+            <td>Not a single course shell</td>
+            <td>Acronym or official name</td>
+            <td>PDBA · Postgraduate Diploma in Business Administration</td>
+          </tr>
+          <tr>
+            <td><b>Course</b></td>
+            <td>A subject within the programme</td>
+            <td>Blackboard Ultra course shell</td>
+            <td>Official title in Title Case</td>
+            <td>Business Finance for Managers</td>
+          </tr>
+          <tr>
+            <td><b>Learning module</b></td>
+            <td>Top-level container inside the course</td>
+            <td>Blackboard Ultra Learning Module</td>
+            <td>Title Case · fixed names for standard modules; <b>Topic N: Title</b> for academic content</td>
+            <td>Course Introduction · Topic 1: Understanding Financial Statements</td>
+          </tr>
+          <tr>
+            <td><b>Lesson</b></td>
+            <td>A focused learning page or content item within a topic</td>
+            <td>Document, page, file, activity, discussion, quiz or assessment</td>
+            <td>Title Case · concise and descriptive</td>
+            <td>Reading Financial Statements · Knowledge Check: Ratio Analysis</td>
+          </tr>
+          <tr>
+            <td><b>Section</b></td>
+            <td>Internal learning scaffold within a lesson</td>
+            <td>Text editor Title / Header / Subheader / Paragraph</td>
+            <td>Title in Title Case · Header, Subheader and Paragraph in sentence case</td>
+            <td>Apply this concept to your workplace</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="callout info" style="margin-top:18px"><div class="glyph">i</div><div class="body"><div class="ttl">Learning Module is a specific Blackboard term</div><p><b>Learning Module</b> in this guide always refers to the Blackboard Ultra content container — a top-level folder that can hold documents, files, tests, assignments, multimedia, links, discussions and activities, and can enforce sequential navigation. Use the term deliberately to avoid confusion with an informal use of the word "module".</p></div></div>
+  </div>
+
+  <hr class="rule">
+
+  <!-- Standard modules -->
+  <div class="section">
+    <h3><span class="dot" style="background:var(--teal)"></span>Standard Learning Modules</h3>
+    <p class="sub">Every course uses the same fixed names for orientation and support modules. Build these first, in this order, before adding topic modules.</p>
+    <div class="grid cols-3">
+      <div class="card">
+        <span class="k" style="color:var(--blue)">Standard · required</span>
+        <h4>Course Introduction</h4>
+        <p>Welcomes learners, introduces the facilitator, and explains how to navigate the course.</p>
+      </div>
+      <div class="card">
+        <span class="k" style="color:var(--blue)">Standard · required</span>
+        <h4>Course Overview</h4>
+        <p>Learning outcomes, programme structure, reading list, and academic support information.</p>
+      </div>
+      <div class="card">
+        <span class="k" style="color:var(--teal)">Standard · if applicable</span>
+        <h4>Live Sessions</h4>
+        <p>Schedule, Zoom links, preparation tasks, and recordings for synchronous sessions.</p>
+      </div>
+      <div class="card">
+        <span class="k" style="color:var(--blue)">Standard · required</span>
+        <h4>Assessments</h4>
+        <p>All summative and formative assessments, briefs, rubrics, and submission instructions.</p>
+      </div>
+      <div class="card">
+        <span class="k" style="color:var(--teal)">Standard · if applicable</span>
+        <h4>Additional Resources</h4>
+        <p>Supplementary readings, tools, or reference material that supports but is not required for assessment.</p>
+      </div>
+      <div class="card">
+        <span class="k" style="color:var(--blue)">Standard · required</span>
+        <h4>Conclusion</h4>
+        <p>Closing remarks, next steps in the programme, and a learner reflection prompt.</p>
+      </div>
+    </div>
+    <div class="callout warn" style="margin-top:18px"><div class="glyph">!</div><div class="body"><div class="ttl">Keep the names exact</div><p>Use these names verbatim — do not personalise or abbreviate them (e.g. not "Intro", "Welcome", or "Assessments &amp; Quizzes"). Consistent names mean learners always know where to look, no matter which course they are in.</p></div></div>
+  </div>
+
+  <hr class="rule">
+
+  <!-- Topic modules -->
+  <div class="section">
+    <h3><span class="dot" style="background:var(--green)"></span>Topic Learning Modules</h3>
+    <p class="sub">Academic content is organised into numbered topic modules. Use the <b>Topic N: Title</b> format without exception — it tells learners exactly where they are in the course sequence and how many topics remain.</p>
+    <div class="grid cols-2">
+      <div class="card">
+        <h4 style="font-size:17px;margin-bottom:12px">Format</h4>
+        <div style="font-family:var(--mono);font-size:15px;line-height:2;color:var(--ink-soft)">
+          <div><b style="color:var(--blue)">Topic 1:</b> [Topic Title]</div>
+          <div><b style="color:var(--blue)">Topic 2:</b> [Topic Title]</div>
+          <div><b style="color:var(--blue)">Topic 3:</b> [Topic Title]</div>
+        </div>
+        <p style="font-size:13px;color:var(--ink-soft);margin:12px 0 0">Title Case. Colon after the number. No abbreviations.</p>
+      </div>
+      <div class="card">
+        <h4 style="font-size:17px;margin-bottom:12px">Examples</h4>
+        <div style="font-family:var(--mono);font-size:15px;line-height:2;color:var(--ink-soft)">
+          <div><b style="color:var(--blue)">Topic 1:</b> Understanding Financial Statements</div>
+          <div><b style="color:var(--blue)">Topic 2:</b> Time Value of Money</div>
+          <div><b style="color:var(--blue)">Topic 3:</b> Budgeting and Forecasting</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="rule">
+
+  <!-- Lesson titles -->
+  <div class="section">
+    <h3><span class="dot" style="background:var(--lime)"></span>Lesson and page titles</h3>
+    <p class="sub">Titles must describe the learning purpose — not just the format. A learner should understand what they will learn or do from the title alone, before opening the item. Use a type prefix only when it prevents ambiguity.</p>
+    <div class="dd">
+      <div class="dd-card do">
+        <div class="dd-tag"><span class="ic">✓</span>Do — descriptive titles</div>
+        <p class="ex">Video: Why Financial Statements Matter</p>
+        <p class="ex">Reading: Introduction to Cash Flow</p>
+        <p class="ex">Activity: Analyse an Income Statement</p>
+        <p class="ex">Knowledge Check: Financial Ratios</p>
+        <p class="ex">Reflection: Finance in Your Workplace</p>
+      </div>
+      <div class="dd-card no">
+        <div class="dd-tag"><span class="ic">✕</span>Don't — vague or format-only labels</div>
+        <p class="ex muted">Video 1</p>
+        <p class="ex muted">Reading</p>
+        <p class="ex muted">Activity</p>
+        <p class="ex muted">Finance lesson</p>
+        <p class="ex muted">Week 3 stuff</p>
+      </div>
+    </div>
+    <div class="callout info" style="margin-top:18px"><div class="glyph">i</div><div class="body"><div class="ttl">Why this matters for accessibility</div><p>WCAG 2.4.6 (Headings and Labels) requires that headings and labels describe the topic or purpose of content — including learners navigating by assistive technology, who encounter titles out of visual context. "Video 1" fails this test; "Video: Why Financial Statements Matter" passes it.</p></div></div>
+  </div>
+
+  <hr class="rule">
+
+  <!-- In-page headings -->
+  <div class="section">
+    <h3><span class="dot" style="background:var(--orange)"></span>In-page heading case</h3>
+    <p class="sub">The Blackboard text editor provides four heading levels. Apply case consistently — Title Case at the top level only, sentence case for everything below.</p>
+    <div class="grid cols-2">
+      <div class="card">
+        <h4 style="font-size:17px;margin-bottom:12px">Heading hierarchy &amp; case</h4>
+        <div style="font-family:var(--mono);font-size:13px;line-height:1.95;color:var(--ink-soft)">
+          <div><b style="color:var(--blue)">Title</b> (H1) — page title · <span style="color:var(--grey)">Title Case</span></div>
+          <div style="padding-left:18px"><b style="color:var(--blue)">Header</b> (H2) — major section · <span style="color:var(--grey)">sentence case</span></div>
+          <div style="padding-left:36px"><b style="color:var(--blue)">Subheader</b> (H3) — subsection · <span style="color:var(--grey)">sentence case</span></div>
+          <div style="padding-left:54px"><b style="color:var(--blue)">Paragraph</b> — body text · <span style="color:var(--grey)">sentence case</span></div>
+        </div>
+        <p style="font-size:13px;color:var(--ink-soft);margin:12px 0 0">Use in order — never skip a level for visual effect.</p>
+      </div>
+      <div class="card">
+        <h4 style="font-size:17px;margin-bottom:12px">The golden rule</h4>
+        <div class="pquote" style="margin:0">
+          <p class="q" style="font-size:18px">Name for navigation first, decoration second.</p>
+          <div class="cite">BB Conventions<span>Every course item should tell the learner what it is, where it fits, and what they are expected to do with it.</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="dd" style="margin-top:18px">
+      <div class="dd-card do">
+        <div class="dd-tag"><span class="ic">✓</span>Correct heading case</div>
+        <p class="ex"><b>Title (H1):</b> Understanding Cash Flow</p>
+        <p class="ex"><b>Header (H2):</b> What is cash flow?</p>
+        <p class="ex"><b>Subheader (H3):</b> Operating vs investing activities</p>
+      </div>
+      <div class="dd-card no">
+        <div class="dd-tag"><span class="ic">✕</span>Incorrect — Title Case below H1</div>
+        <p class="ex muted"><b>Header (H2):</b> What Is Cash Flow?</p>
+        <p class="ex muted"><b>Subheader (H3):</b> Operating Vs Investing Activities</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     07 · ACCESSIBILITY
      ============================================================ -->
 <section class="panel" id="p-access" role="tabpanel" aria-labelledby="t-access">
   <div class="eyebrow">UDL + WCAG 2.1 AA</div>
@@ -878,6 +1092,12 @@
 </div>
 
 </main>
+    <footer class="footer">
+      <div><b>GIBS Brand &amp; Content Style Guide</b> · for the Instructional Design team · v1.0</div>
+      <div>Globally accredited, proudly African. · Last updated June 2026</div>
+    </footer>
+  </div><!-- /.page-content -->
+</div><!-- /.page-body -->
 
 <!-- Team notes (per-tab) -->
 <button class="notes-fab" id="notes-fab" hidden aria-expanded="false">Notes<span class="notes-count" id="notes-count" hidden>0</span></button>
@@ -906,11 +1126,6 @@
     </div>
   </form>
 </div>
-
-<footer class="footer">
-  <div><b>GIBS Brand &amp; Content Style Guide</b> · for the Instructional Design team · v1.0</div>
-  <div>Globally accredited, proudly African. · Last updated June 2026</div>
-</footer>
 
 <script src="assets/guide.js"></script>
 <script src="assets/tools.js"></script>
